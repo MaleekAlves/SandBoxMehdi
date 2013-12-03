@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>28.0</apiVersion>
+    <description>A layout of a ticket that is suitable for dispatch to a service team. (this is a somewhat generic layout, in future could extend with service specific components)</description>
+    <label>TicketPdfDispatchComponent</label>
+</ApexComponent>

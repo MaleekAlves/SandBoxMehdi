@@ -1,0 +1,14 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p>{!Case.Contact}</p><p>{!Case.Contact_Correspondence_Address__c}</p><p>&nbsp;</p><p><br>&nbsp;</p>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<p>Dear {!Case.Contact},</p><p>&nbsp;</p><p>Your enquiry has been received by the Customer Relations Team, who will either respond to it or pass it on to someone who can.<br><br>The Council’s targets for responding to enquiry are:</p><p>&nbsp;</p><p><strong>Stage 1<br></strong>We will respond within 10 working days of receipt, or we will contact you with an update</p><p>&nbsp;</p><p><strong>Stage 2</strong><br>We will respond within 10 working days of receipt, or we will contact you with an update</p><p>&nbsp;</p><p><strong>Stage 3<br></strong>We will tell you the timescales involved and keep you updated.</p><p><br><br>You can find the Council’s Complaints Policy at <a href="http://www.hounslow.gov.uk">www.hounslow.gov.uk</a></p><p>&nbsp;</p><p>Kind regards,</p><p>&nbsp;</p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<p><strong>Customer Relations Team</strong><br>Corporate Resources<br>London Borough of Hounslow, Civic Centre, Lampton Road, Hounslow, TW3 4DN <br>Tel: 020 8583 5211| e-mail:&nbsp; <a href="mailto:complaints@hounslow.gov.uk">complaints@hounslow.gov.uk</a> |Web:&nbsp;&nbsp;<a href="http://www.hounslow.gov.uk/">http://www.hounslow.gov.uk/</a></p>]]></td>
+</tr>
+</table>

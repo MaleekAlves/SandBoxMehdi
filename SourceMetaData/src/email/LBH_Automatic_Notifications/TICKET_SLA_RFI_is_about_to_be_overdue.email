@@ -1,0 +1,32 @@
+<font face="Arial">*** TICKET IS ABOUT TO BE OVERDUE *** <BR>
+
+<P>
+The ticket  <B># {!Ticket__c.Name}:  {!Ticket__c.GLOBAL_Ticket_Summary_Brief__c}</B>  is about to be overdue. 
+ <BR>
+The SLA of this ticket is {!Ticket__c.GLOBAL_Active_SLA__c} and it is about to expire in <B> {!Ticket__c.GLOBAL_SLA_Days_Remaining__c} </B> days. 
+
+</P> 
+</P> 
+Case Information:<BR>
+Case ID - <B>{!Ticket__c.GLOBAL_Goal__c}</B> <BR>
+Case Details - <B>{!Ticket__c.GLOBAL_Goal_Summary__c}</B> <BR>
+
+</P> 
+
+<P>
+
+Ticket Information:<BR>
+Customer -  <B> {!Ticket__c.GLOBAL_Customer_Name__c}</B> <BR>
+Opened Date - <B>{!Ticket__c.GLOBAL_Opened_Date__c}</B> <BR>
+Received Date - <B>{!Ticket__c.GLOBAL_Received_Date__c}</B> <BR>
+Current Owner - <B>{!Ticket__c.OwnerFullName}</B>  <BR> <BR>
+Freedom of Information Type - {!Ticket__c.FOI_Type__c} <BR>
+Requested Information -  {!Ticket__c.FOI_EIR_Request__c} <BR>
+Additional Info - {!Ticket__c.GLOBAL_Additional_Info__c}<BR>
+</P>
+
+Please send your reply to <B>customerrelations@hounslow.gov.uk </B>
+<P>
+Kind Regards, 
+<P>
+Customer Relations Team</font>

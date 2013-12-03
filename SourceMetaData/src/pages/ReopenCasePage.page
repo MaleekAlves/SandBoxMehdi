@@ -1,0 +1,23 @@
+<apex:page standardController="Case" showHeader="false">
+  
+    <apex:form >
+        <apex:pageBlock title="Reopen Case">
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="1" >
+                
+                <apex:inputField value="{!Case.Status}"   />
+                <apex:inputField value="{!Case.Reopen_Reason__c}"  required="true" />                
+                <apex:inputField value="{!Case.Reopen_Reason_Other__c}"   />                
+                <apex:pageBlockSection columns="1" collapsible="true">
+                    <apex:inputField value="{!Case.Description}" />
+                </apex:pageBlockSection>    
+                
+            </apex:pageBlockSection>
+            
+            
+            
+            <apex:commandButton action="{!save}" value="Save" id="saveButton"/>
+            <apex:commandButton action="{!cancel}" value="Cancel" id="cancelButton"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

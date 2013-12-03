@@ -1,0 +1,12 @@
+<messaging:emailTemplate subject="Ticket {!relatedTo.Name} is Opened" recipientType="User" relatedToType="Ticket__c">
+<messaging:plainTextEmailBody >
+Dear {!recipient.Name},
+
+   An ICT Ticket with ID = {!relatedTo.Name} has been opened on your behalf.
+   
+   Please quote this number in future enquiries with the ICT service desk relating to this ticket.
+   
+   Thanks.
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

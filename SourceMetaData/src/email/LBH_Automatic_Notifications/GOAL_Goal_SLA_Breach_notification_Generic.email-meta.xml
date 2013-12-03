@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Internal notification when Goal SLA has been breached.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GOAL: Goal SLA Breach notification (Generic)</name>
+    <style>none</style>
+    <subject>Goal # {!Case.CaseNumber}: {!Case.Subject} SLA has been breached</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgement - MP/Councillor - Goal - Letter</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LBH_Standard_Letterhead</letterhead>
+    <name>GOAL: MP Councillor Acknowledgement Letter</name>
+    <style>formalLetter</style>
+    <subject>Request Acknowledgement - Reference {!Case.CaseNumber}</subject>
+    <textOnly>Dear {!Case.REP_Customer_Representative__c}
+
+Your correspondence on behalf of {!Case.Contact} has been received by the Customer Relations Team, who will either respond to it or pass it on to someone who can.
+ 
+The Council’s target for responding to correspondence from Councillors and Members of Parliament is seven working days from receipt.
+
+
+{!User.FirstName} {!User.LastName} | {!User.Title}
+Corporate Resources
+London Borough of Hounslow, Civic Centre, Lampton Road, Hounslow, TW3 4DN 
+Tel: 020 8583 5211| e-mail:  complaints@hounslow.gov.uk |Web:  http://www.hounslow.gov.uk/</textOnly>
+    <type>html</type>
+</EmailTemplate>

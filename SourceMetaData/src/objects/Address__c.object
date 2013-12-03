@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>An Address in BS7666 Format.</description>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Address_Error__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Issue with this address?</inlineHelpText>
+        <label>Address Error</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Address_Part__c</fullName>
+        <externalId>false</externalId>
+        <formula>TRIM(PAON__c) + &quot; &quot; + TRIM(Street_Description__c)</formula>
+        <inlineHelpText>PAON and Street</inlineHelpText>
+        <label>Address Part</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County__c</fullName>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Address_Line_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(PAON__c)),TRIM(PAON__c) + &quot; &quot;,&quot;&quot;) + 
+IF(NOT(ISBLANK(SAON__c)),TRIM(SAON__c) + &quot; &quot;,&quot;&quot;) + 
+TRIM(Street_Description__c)</formula>
+        <inlineHelpText>PAON, SAON and Street.</inlineHelpText>
+        <label>Full Address Line 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Address_Line_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Locality__c)), TRIM(Locality__c) + &quot;, &quot;, &quot;&quot;) + TRIM(Town__c)</formula>
+        <inlineHelpText>Locality and Town.</inlineHelpText>
+        <label>Full Address Line 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Address_Line_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(County__c)), TRIM(County__c) + &apos;, &apos;, &apos;&apos;) + TRIM(Postcode__c)</formula>
+        <inlineHelpText>County and Postcode.</inlineHelpText>
+        <label>Full Address Line 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>House_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>TRIM(PAON__c) + &quot; &quot; + TRIM(SAON__c) + &quot; &quot; + TRIM(Street_Description__c)</formula>
+        <inlineHelpText>PAON, SAON and Street.</inlineHelpText>
+        <label>House Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>House_Part__c</fullName>
+        <externalId>false</externalId>
+        <formula>Trim(SAON__c)</formula>
+        <inlineHelpText>SAON.</inlineHelpText>
+        <label>House Part</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inactive_address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Deactivate a pending address.</inlineHelpText>
+        <label>Inactive address</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Locality__c</fullName>
+        <externalId>false</externalId>
+        <label>Locality</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAON__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please insure this does not contain secondary address information (E.g. Flat, Apartment, Unit or Room)</inlineHelpText>
+        <label>House Number / Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Post_Town__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Town</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postcode__c</fullName>
+        <externalId>false</externalId>
+        <label>Postcode</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAON__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Secondary Address Object.</inlineHelpText>
+        <label>SAON</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Town__c</fullName>
+        <externalId>false</externalId>
+        <label>Town</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UK_Address__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the address within the UK?</inlineHelpText>
+        <label>Address is in UK</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UPRN__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Property Reference Number.</inlineHelpText>
+        <label>UPRN</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>USRN__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique Street Reference Number.</inlineHelpText>
+        <label>USRN</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ward__c</fullName>
+        <externalId>false</externalId>
+        <label>Ward</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Address</label>
+    <listViews>
+        <fullName>Addresses_with_Suspected_Errors</fullName>
+        <columns>NAME</columns>
+        <columns>Full_Address_Line_1__c</columns>
+        <columns>Full_Address_Line_2__c</columns>
+        <columns>Full_Address_Line_3__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Address_Error__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Addresses with Suspected Errors</label>
+        <sharedTo>
+            <role>Business_Systems</role>
+            <role>Corporate_Service_Centre_Support_Manager</role>
+            <role>Customer_Contact_Centre_Support_Manager</role>
+            <role>System_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Full_Address_Line_1__c</columns>
+        <columns>Full_Address_Line_2__c</columns>
+        <columns>Full_Address_Line_3__c</columns>
+        <columns>UPRN__c</columns>
+        <columns>USRN__c</columns>
+        <columns>Postcode__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <sharedTo>
+            <role>System_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Local_Imported_Addresses</fullName>
+        <columns>NAME</columns>
+        <columns>Full_Address_Line_1__c</columns>
+        <columns>Full_Address_Line_2__c</columns>
+        <columns>Full_Address_Line_3__c</columns>
+        <columns>UPRN__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Address__c.Local_Imported</value>
+        </filters>
+        <label>Local Imported Addresses</label>
+    </listViews>
+    <listViews>
+        <fullName>Local_Imported_Streets</fullName>
+        <columns>NAME</columns>
+        <columns>Full_Address_Line_1__c</columns>
+        <columns>Full_Address_Line_2__c</columns>
+        <columns>Full_Address_Line_3__c</columns>
+        <columns>USRN__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Address__c.Street</value>
+        </filters>
+        <label>Local Imported Streets</label>
+    </listViews>
+    <listViews>
+        <fullName>Local_Pending_Addresses</fullName>
+        <columns>NAME</columns>
+        <columns>Full_Address_Line_1__c</columns>
+        <columns>Full_Address_Line_2__c</columns>
+        <columns>Full_Address_Line_3__c</columns>
+        <columns>UPRN__c</columns>
+        <columns>USRN__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Address__c.Local_Pending</value>
+        </filters>
+        <label>Local Pending Addresses</label>
+    </listViews>
+    <listViews>
+        <fullName>Outside_Borough_Addresses</fullName>
+        <columns>NAME</columns>
+        <columns>Full_Address_Line_1__c</columns>
+        <columns>Full_Address_Line_2__c</columns>
+        <columns>Full_Address_Line_3__c</columns>
+        <columns>County__c</columns>
+        <columns>Country__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Address__c.Outside_Borough</value>
+        </filters>
+        <label>Outside Borough Addresses</label>
+    </listViews>
+    <nameField>
+        <label>Address</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <namedFilters>
+        <fullName>nf_01Ib0000000IJOKEA4_00Nb0000002zMXLEA2</fullName>
+        <active>true</active>
+        <errorMessage>The customer address must be an active property.</errorMessage>
+        <field>PersonAddressLookup__c.Address__c</field>
+        <filterItems>
+            <field>Address__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Local Imported, Local Pending, Outside Borough</value>
+        </filterItems>
+        <filterItems>
+            <field>Address__c.Inactive_address__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>Address__c.PAON__c</field>
+            <operation>notContain</operation>
+            <value>STREET RECORD</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+        <name>Person Address Lookup_Address</name>
+    </namedFilters>
+    <namedFilters>
+        <fullName>nf_01Ib0000000IJhdEAG_00Nb0000002zU60EAE</fullName>
+        <active>true</active>
+        <errorMessage>The target address must be active.</errorMessage>
+        <field>Target__c.Address__c</field>
+        <filterItems>
+            <field>Address__c.Inactive_address__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+        <name>Target_Address</name>
+    </namedFilters>
+    <pluralLabel>Addresses</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Local_Imported</fullName>
+        <active>true</active>
+        <description>Local addresses in BS7666 Format for the gazetteer</description>
+        <label>Local Imported</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Local_Pending</fullName>
+        <active>true</active>
+        <description>Pending address e.g. UPRN unknown, or new property.</description>
+        <label>Local Pending</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Outside_Borough</fullName>
+        <active>true</active>
+        <description>An address not within the local borough e.g. previous address</description>
+        <label>Outside Borough</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Street</fullName>
+        <active>true</active>
+        <description>Street from the LSG.</description>
+        <label>Street</label>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <listViewButtons>New_Imported_Address</listViewButtons>
+        <listViewButtons>New_Pending_Address</listViewButtons>
+        <listViewButtons>New_Address_Outside_Borough</listViewButtons>
+        <lookupDialogsAdditionalFields>PAON__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Street_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Town__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Postcode__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>UPRN__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>USRN__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>PAON__c</lookupFilterFields>
+        <lookupFilterFields>Street_Description__c</lookupFilterFields>
+        <lookupFilterFields>Ward__c</lookupFilterFields>
+        <lookupFilterFields>Postcode__c</lookupFilterFields>
+        <lookupFilterFields>Town__c</lookupFilterFields>
+        <searchFilterFields>PAON__c</searchFilterFields>
+        <searchFilterFields>Street_Description__c</searchFilterFields>
+        <searchFilterFields>Town__c</searchFilterFields>
+        <searchFilterFields>Postcode__c</searchFilterFields>
+        <searchFilterFields>UPRN__c</searchFilterFields>
+        <searchFilterFields>USRN__c</searchFilterFields>
+        <searchResultsAdditionalFields>PAON__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Street_Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Town__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Postcode__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>USRN__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPRN__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Imported_addresses_must_have_UPRN_USRN</fullName>
+        <active>true</active>
+        <errorConditionFormula>CONTAINS(RecordType.Name, &quot;Local Imported&quot;) &amp;&amp;
+ISBLANK( UPRN__c ) &amp;&amp;
+ISBLANK (USRN__c)</errorConditionFormula>
+        <errorDisplayField>UPRN__c</errorDisplayField>
+        <errorMessage>Local imported addresses must have either a UPRN or USRN.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_enter_a_street</fullName>
+        <active>true</active>
+        <description>Local imported, or pending addresses must have a street.</description>
+        <errorConditionFormula>ISBLANK(Street_Description__c) &amp;&amp; 
+(RecordType.Name == &apos;Local_Imported&apos; ||
+ RecordType.Name == &apos;Local Pending&apos;)</errorConditionFormula>
+        <errorDisplayField>Street_Description__c</errorDisplayField>
+        <errorMessage>Local imported, or pending addresses must have a street.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Edit_as_new_pending_address</fullName>
+        <availability>online</availability>
+        <description>Clones the imported address as a pending address with the same UPRN.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Edit as new pending address</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/{!Address__c.Id}/e?clone=1&amp;RecordType=012b0000000LLPJ</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Address_Outside_Borough</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Address Outside Borough</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a08/e?Name=TBD&amp;RecordType=012b0000000LLPO</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Imported_Address</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Imported Address</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a08/e?Name=TBD&amp;RecordType=012b0000000LLP4</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Pending_Address</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Pending Address</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a08/e?Name=TBD&amp;RecordType=012b0000000LLPJ</url>
+    </webLinks>
+</CustomObject>

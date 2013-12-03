@@ -1,0 +1,93 @@
+<apex:page standardController="Ticket__c" extensions="EmailTicketControllerExtension" showheader="false">
+    
+    
+    <apex:form ><br/>
+        <apex:pageBlock title="Set the parameters of the email {!$CurrentPage.parameters.action}" >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <!-- <apex:commandButton value="Cancel" action="window.close()" onclick="window.close()"/>   !-->
+                <apex:commandButton value="Send Email" action="{!send}" onclick="window.close()"/>
+                <apex:commandButton value="Preview Dispatch" onClick="window.open('/apex/TicketPdfDispatch?id={!ticket.id}');" />  
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Specify Recipients, Subject and Body of Email" columns="1">
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="From" for="from"/>
+                    <apex:outputText value="{!replyEmail.Address}" id="From" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="To" for="To"/>
+                    <apex:inputText value="{!to}" id="To" maxlength="80" size="80"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Cc" for="cc"/>
+                    <apex:inputText value="{!cc}" id="cc" maxlength="80" size="80"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Bcc" for="bcc"/>
+                    <apex:inputText value="{!bcc}" id="bcc" maxlength="80" size="80"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                  <apex:outputLabel value="Subject" for="Subject"/>     
+                  <apex:inputText value="{!subject}" id="Subject" maxlength="80" size="80"/>
+                </apex:pageBlockSectionItem>
+                
+               <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Body" for="Body"/>  
+                    <apex:inputTextarea value="{!body}" id="Body" rows="15" cols="120" />     
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Mark the Dispatched Ticket as Open" for="markTicketOpen"/>
+                	<apex:inputCheckbox id="markTicketOpen" value="{!markTicketAsOpen}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="true">
+                    <apex:outputLabel value="(Temporary Safeguard) Send a copy of the dispatch to the agent dispatching it" for="markTicketOpen"/>
+                	<apex:inputCheckbox id="markTicketOpen" value="{!markTicketAsOpen}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Select any Additional Attachments" columns="1">
+                Note that a pdf notification of the ticket will be automatically included with the email (click preview button for preview).<br/>
+                Please ensure that the total size of all attachments does not exceed 10 Mb
+                <apex:pageBlockTable value="{!attachmentsList}" var="a" rendered = "{!IF(attachmentsListSize > 0, true, false) }" >
+                    <apex:column headerValue="Send in dispatch?">
+                        <apex:inputCheckbox value="{!a.isSelected}">
+                        	<apex:actionSupport event="onclick" action="{!onAttachmentSelect}" rerender="sizeCounter" />
+                       	</apex:inputCheckbox>
+                    </apex:column> 
+                    <apex:column headerValue="Location" value="{!a.source}" />
+                    <apex:column headerValue="Name" value="{!a.cAttachment.Name}"/>
+                    <apex:column headerValue="Type" value="{!a.cAttachment.ContentType}"/>
+                    <apex:column headerValue="FileSize" value="{!a.cAttachment.BodyLength}"/>
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockSectionItem rendered = "{!IF(attachmentsListSize > 0, false, true) }">
+                	<apex:outputText > Sorry there do not appear to be any attachments linked to the ticket being dispatched or its parent goal that can be sent with this dispatch</apex:outputText>
+                </apex:pageBlockSectionItem>
+                
+                
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection id="sizeCounter" >
+            	<apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Total Selected File Size" for="totalFileSize"/>
+                	<apex:outputText id="totalFileSize" value="{!totalFileSize}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+
+        
+    </apex:form>
+ 
+    
+</apex:page>

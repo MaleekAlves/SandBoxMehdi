@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Work Phone</value>
+        </caseValues>
+        <name>phone_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering Concession</masterLabel>
+            <translation><!-- Catering Concession --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The primary address of the person --></help>
+        <label><!-- Primary Address --></label>
+        <name>Current_Correspondence_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag was recorded on this date --></help>
+        <label><!-- Date Flagged --></label>
+        <name>Date_Flagged__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked if this Account is an Events customer --></help>
+        <label><!-- Events Customer --></label>
+        <name>Events_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- How long an individual is being flagged for. --></help>
+        <label><!-- Flag Duration (months) --></label>
+        <name>Flag_Duration__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indefinite</masterLabel>
+            <translation><!-- Indefinite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date at which the flag on the individual lapses --></help>
+        <label><!-- Flag Expiration Date --></label>
+        <name>Flag_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked if there is a warning about a customer --></help>
+        <label><!-- Flagged --></label>
+        <name>Flagged__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Internal Customer = Hounslow Council
+External Customer = Lampton 360 ltd --></help>
+        <label><!-- Internal Customer --></label>
+        <name>Internal_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many correspondence addresses are linked with this person? --></help>
+        <label><!-- Number of Correspondence Addresses --></label>
+        <name>Number_of_Correspondence_Addresses__c</name>
+    </fields>
+    <fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The default preferred method of communication for a person (sets default preferred contact method on case) --></help>
+        <label><!-- Person Preferred Contact Method --></label>
+        <name>Person_Preferred_Contact_Method__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Preference</masterLabel>
+            <translation><!-- No Preference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Rag rate of the customer relationship
+Red= Low
+Amber= Medium
+Green=High --></help>
+        <label><!-- RAG Status --></label>
+        <name>RAG_Status__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Reasons for which an individual may be flagged --></help>
+        <label><!-- Reasons for flagging --></label>
+        <name>Reasons_for_flagging__c</name>
+        <picklistValues>
+            <masterLabel>Abusive (Customers)</masterLabel>
+            <translation><!-- Abusive (Customers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Abusive (Staff)</masterLabel>
+            <translation><!-- Abusive (Staff) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threatening (Customer)</masterLabel>
+            <translation><!-- Threatening (Customer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threatening (Staff)</masterLabel>
+            <translation><!-- Threatening (Staff) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Violent (Customers)</masterLabel>
+            <translation><!-- Violent (Customers) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Violent (Staff)</masterLabel>
+            <translation><!-- Violent (Staff) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Types --></label>
+        <name>Sub_Types__c</name>
+        <picklistValues>
+            <masterLabel>Central Government Agency</masterLabel>
+            <translation><!-- Central Government Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Safety</masterLabel>
+            <translation><!-- Community Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free School</masterLabel>
+            <translation><!-- Free School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Care</masterLabel>
+            <translation><!-- Health Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent (Primary)</masterLabel>
+            <translation><!-- Independent (Primary) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent (Secondary)</masterLabel>
+            <translation><!-- Independent (Secondary) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursery</masterLabel>
+            <translation><!-- Nursery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police</masterLabel>
+            <translation><!-- Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre School</masterLabel>
+            <translation><!-- Pre School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Academy</masterLabel>
+            <translation><!-- Primary Academy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Private</masterLabel>
+            <translation><!-- Primary Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary State</masterLabel>
+            <translation><!-- Primary State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Academy</masterLabel>
+            <translation><!-- Secondary Academy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Private</masterLabel>
+            <translation><!-- Secondary Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary State</masterLabel>
+            <translation><!-- Secondary State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Umbrella Group</masterLabel>
+            <translation><!-- Umbrella Group --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Charity</masterLabel>
+            <translation><!-- Charity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Councillor</masterLabel>
+            <translation><!-- Councillor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBH Officer</masterLabel>
+            <translation><!-- LBH Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LBH Supplier</masterLabel>
+            <translation><!-- LBH Supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Authority</masterLabel>
+            <translation><!-- Local Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Public Sector</masterLabel>
+            <translation><!-- Other Public Sector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Business(250+ Employees)</masterLabel>
+            <translation><!-- Private Business(250+ Employees) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME(51-250 employees)</masterLabel>
+            <translation><!-- SME(51-250 employees) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School</masterLabel>
+            <translation><!-- School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business(0-50 employees)</masterLabel>
+            <translation><!-- Small Business(0-50 employees) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Ward in which the customer is eligable to vote within --></help>
+        <label><!-- Ward --></label>
+        <name>Ward__c</name>
+        <picklistValues>
+            <masterLabel>Bedfont</masterLabel>
+            <translation><!-- Bedfont --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brentford</masterLabel>
+            <translation><!-- Brentford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiswick Homefields</masterLabel>
+            <translation><!-- Chiswick Homefields --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiswick Riverside</masterLabel>
+            <translation><!-- Chiswick Riverside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cranford</masterLabel>
+            <translation><!-- Cranford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feltham North</masterLabel>
+            <translation><!-- Feltham North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feltham West</masterLabel>
+            <translation><!-- Feltham West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hanworth</masterLabel>
+            <translation><!-- Hanworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hanworth Park</masterLabel>
+            <translation><!-- Hanworth Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heston Central</masterLabel>
+            <translation><!-- Heston Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heston East</masterLabel>
+            <translation><!-- Heston East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heston West</masterLabel>
+            <translation><!-- Heston West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow Central</masterLabel>
+            <translation><!-- Hounslow Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow Heath</masterLabel>
+            <translation><!-- Hounslow Heath --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow South</masterLabel>
+            <translation><!-- Hounslow South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hounslow West</masterLabel>
+            <translation><!-- Hounslow West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isleworth</masterLabel>
+            <translation><!-- Isleworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Osterley and Spring Grove</masterLabel>
+            <translation><!-- Osterley and Spring Grove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syon</masterLabel>
+            <translation><!-- Syon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turnham Green</masterLabel>
+            <translation><!-- Turnham Green --></translation>
+        </picklistValues>
+    </fields>
+    <namedFilters>
+        <errorMessage><!-- Cannot be a person account. --></errorMessage>
+        <name>nf_01Ib0000000IJhdEAG_00Nb0000003cZtMEAU</name>
+    </namedFilters>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- No more than 1 correspondence address is allowed for this person. --></errorMessage>
+        <name>No_more_than_1_correspondence_address</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Customer --></label>
+        <name>New_Customer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

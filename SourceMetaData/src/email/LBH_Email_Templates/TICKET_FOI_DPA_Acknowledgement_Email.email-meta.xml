@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgement - FOI/DPA - Ticket - Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LBH_Standard_Letterhead</letterhead>
+    <name>TICKET: FOI DPA Acknowledgement Email</name>
+    <style>formalLetter</style>
+    <subject>Acknowledging your request - ID {!Ticket__c.Name}</subject>
+    <textOnly>Dear {!Ticket__c.GLOBAL_Customer_Name__c}
+
+Your (Freedom of Information Request / Environmental Information Request / Subject Access Request) has been received by the Customer Relations Team, who will either respond to it or pass it on to someone who can.
+ 
+The target for responding to this request is 20 working days for Freedom of information and Environmental Information requests, and 40 calendar days for Subject Access Requests.
+
+{!User.FirstName} {!User.LastName} | {!User.Title}
+Corporate Resources
+London Borough of Hounslow, Civic Centre, Lampton Road, Hounslow, TW3 4DN 
+Tel: 020 8583 5211| e-mail:  complaints@hounslow.gov.uk |Web:  http://www.hounslow.gov.uk/</textOnly>
+    <type>html</type>
+</EmailTemplate>

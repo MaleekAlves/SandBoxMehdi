@@ -1,0 +1,13 @@
+<apex:page standardController="Ticket__c" >
+<style>
+.HeaderText {font-size:14px; text-decoration: none; color:#FFFFFF; background-color:transparent; font-weight:bold;}
+.HeaderText:Hover {font-size:14px; text-decoration: none; color:#FFFFFF; font-weight:bold;}
+</style>
+<div align="left" valign="center" style="background-color:#B047E9;">
+<table border="0" align="center" width="100%">
+    <tr><td align="left"><apex:image title="Flagged customer" value="/img/icon/flag24.png" rendered="{!NOT(ISBLANK(Ticket__c.GLOBAL_Customer_Flagged__c))}"/></td>
+    <td align="center"><a class="HeaderText">TICKET - {!Ticket__c.GLOBAL_Ticket_Summary__c}</a></td>
+    <td align="right"><apex:image title="Flagged customer" value="/img/icon/flag24.png" rendered="{!NOT(ISBLANK(Ticket__c.GLOBAL_Customer_Flagged__c))}"/></td></tr>
+</table>
+</div>
+</apex:page>

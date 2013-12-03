@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>28.0</apiVersion>
+    <description>Page layout for when a user does not have view (MVC) access to the record of a specific record type.</description>
+    <label>TicketNoAccess</label>
+</ApexPage>

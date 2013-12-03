@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Additional information about the selected location e.g. 2nd floor, or beware of dog. --></help>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Name --></label>
+        <name>Address_Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Target Address, used for geo-location targets related to a specific address --></help>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+        <relationshipLabel><!-- Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is it a flagged customer? --></help>
+        <label><!-- Contact Flagged --></label>
+        <name>Contact_Flagged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Primary Address --></label>
+        <name>Current_Correspondence_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- e.g. At the bottom of the river --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Full_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Full_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 3 --></label>
+        <name>Full_Address_Line_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- The LBH department that is being targeted. --></help>
+        <label><!-- LBH Department --></label>
+        <name>LBH_Department__c</name>
+        <picklistValues>
+            <masterLabel>Adult Safeguarding, Social Care &amp; Health</masterLabel>
+            <translation><!-- Adult Safeguarding, Social Care &amp; Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any Department</masterLabel>
+            <translation><!-- Any Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development</masterLabel>
+            <translation><!-- Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children&apos;s &amp; Adults&apos; Resource Planning</masterLabel>
+            <translation><!-- Children&apos;s &amp; Adults&apos; Resource Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Childrens Safeguarding &amp; Specialist services</masterLabel>
+            <translation><!-- Childrens Safeguarding &amp; Specialist services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Safety, Environment &amp; Regulatory Services</masterLabel>
+            <translation><!-- Community Safety, Environment &amp; Regulatory Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Governance</masterLabel>
+            <translation><!-- Corporate Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Services</masterLabel>
+            <translation><!-- Corporate Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer &amp; Business Solutions</masterLabel>
+            <translation><!-- Customer &amp; Business Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Relations</masterLabel>
+            <translation><!-- Customer Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education &amp; Early Intervention</masterLabel>
+            <translation><!-- Education &amp; Early Intervention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elections</masterLabel>
+            <translation><!-- Elections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing, Leisure &amp; Public Health</masterLabel>
+            <translation><!-- Housing, Leisure &amp; Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICT - Business Systems</masterLabel>
+            <translation><!-- ICT - Business Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICT Technology</masterLabel>
+            <translation><!-- ICT Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non LBH</masterLabel>
+            <translation><!-- Non LBH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Finance</masterLabel>
+            <translation><!-- Strategic Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Planning, Regeneration &amp; Economic Development</masterLabel>
+            <translation><!-- Strategic Planning, Regeneration &amp; Economic Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategy, Intellegence &amp; Engagement</masterLabel>
+            <translation><!-- Strategy, Intellegence &amp; Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transformation &amp; HR</masterLabel>
+            <translation><!-- Transformation &amp; HR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The directorate of the Council that is being targetted --></help>
+        <label><!-- LBH Directorate --></label>
+        <name>LBH_Directorate__c</name>
+        <picklistValues>
+            <masterLabel>Any Directorate</masterLabel>
+            <translation><!-- Any Directorate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Executive</masterLabel>
+            <translation><!-- Chief Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children&apos;s and Adults Services</masterLabel>
+            <translation><!-- Children&apos;s and Adults Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Resources</masterLabel>
+            <translation><!-- Corporate Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regeneration, Economic Development and Environment</masterLabel>
+            <translation><!-- Regeneration, Economic Development and Environment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The LBH Service team that is being targeted --></help>
+        <label><!-- LBH Service Team --></label>
+        <name>LBH_Service_Team__c</name>
+        <picklistValues>
+            <masterLabel>Access Hounslow (Customer Service)</masterLabel>
+            <translation><!-- Access Hounslow (Customer Service) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordable Housing Supply</masterLabel>
+            <translation><!-- Affordable Housing Supply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assets &amp; Resources</masterLabel>
+            <translation><!-- Assets &amp; Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Control</masterLabel>
+            <translation><!-- Building Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Rates</masterLabel>
+            <translation><!-- Business Rates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Support Service</masterLabel>
+            <translation><!-- Business Support Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Protection&amp; Safeguarding Service</masterLabel>
+            <translation><!-- Child Protection&amp; Safeguarding Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Learning &amp; Disability</masterLabel>
+            <translation><!-- Community Learning &amp; Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Partnerships</masterLabel>
+            <translation><!-- Community Partnerships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Safety &amp; Business Regulations</masterLabel>
+            <translation><!-- Community Safety &amp; Business Regulations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts &amp; Brokerage</masterLabel>
+            <translation><!-- Contracts &amp; Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Parenting</masterLabel>
+            <translation><!-- Corporate Parenting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Council Tax</masterLabel>
+            <translation><!-- Council Tax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Day Support</masterLabel>
+            <translation><!-- Day Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Democratic Services</masterLabel>
+            <translation><!-- Democratic Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Management</masterLabel>
+            <translation><!-- Development Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Payments &amp;Individualised Budgets</masterLabel>
+            <translation><!-- Direct Payments &amp;Individualised Budgets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Services (Print  Room &amp; Post Room)</masterLabel>
+            <translation><!-- Document Services (Print  Room &amp; Post Room) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Years &amp; Childcare</masterLabel>
+            <translation><!-- Early Years &amp; Childcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elections</masterLabel>
+            <translation><!-- Elections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Resource Centre</masterLabel>
+            <translation><!-- Employment Resource Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental Protection</masterLabel>
+            <translation><!-- Environmental Protection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental Strategy</masterLabel>
+            <translation><!-- Environmental Strategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities Management (incl. Fleet Management</masterLabel>
+            <translation><!-- Facilities Management (incl. Fleet Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family &amp; Community</masterLabel>
+            <translation><!-- Family &amp; Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Affairs</masterLabel>
+            <translation><!-- Financial Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Assessments</masterLabel>
+            <translation><!-- Financial Assessments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GIS</masterLabel>
+            <translation><!-- GIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Strategy &amp; Options</masterLabel>
+            <translation><!-- Housing Strategy &amp; Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Commissioning</masterLabel>
+            <translation><!-- Joint Commissioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Mental Health Services</masterLabel>
+            <translation><!-- Joint Mental Health Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Services</masterLabel>
+            <translation><!-- Legal Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lifelong Learning</masterLabel>
+            <translation><!-- Lifelong Learning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Welfare Provision</masterLabel>
+            <translation><!-- Local Welfare Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locality Based Early Intervention Service</masterLabel>
+            <translation><!-- Locality Based Early Intervention Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Members Services</masterLabel>
+            <translation><!-- Members Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Occupational H&amp;S</masterLabel>
+            <translation><!-- Occupational H&amp;S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Occupational Therapy</masterLabel>
+            <translation><!-- Occupational Therapy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Older People&apos;s Services</masterLabel>
+            <translation><!-- Older People&apos;s Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFI Team</masterLabel>
+            <translation><!-- PFI Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance Information</masterLabel>
+            <translation><!-- Performance Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placements &amp; Care Leaving Service</masterLabel>
+            <translation><!-- Placements &amp; Care Leaving Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy &amp; Scrutiny</masterLabel>
+            <translation><!-- Policy &amp; Scrutiny --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Sector Housing</masterLabel>
+            <translation><!-- Private Sector Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Development&amp; Workforce Planning</masterLabel>
+            <translation><!-- Professional Development&amp; Workforce Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Development (incl. Capital Projects)</masterLabel>
+            <translation><!-- Property Development (incl. Capital Projects) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regeneration, Planning Policy &amp; Economic Development</masterLabel>
+            <translation><!-- Regeneration, Planning Policy &amp; Economic Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registration Service</masterLabel>
+            <translation><!-- Registration Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulated Provision</masterLabel>
+            <translation><!-- Regulated Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent Accounting</masterLabel>
+            <translation><!-- Rent Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Team</masterLabel>
+            <translation><!-- Review Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEN &amp; Disability</masterLabel>
+            <translation><!-- SEN &amp; Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safeguarding, Review&amp; Quality Assurance</masterLabel>
+            <translation><!-- Safeguarding, Review&amp; Quality Assurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Effectiveness</masterLabel>
+            <translation><!-- School Effectiveness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Improvement ‐Advisory Services</masterLabel>
+            <translation><!-- School Improvement ‐Advisory Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shared Transport</masterLabel>
+            <translation><!-- Shared Transport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Work Team WMUH</masterLabel>
+            <translation><!-- Social Work Team WMUH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Co‐ordination</masterLabel>
+            <translation><!-- Transport Co‐ordination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport, Traffic Management &amp; Parking</masterLabel>
+            <translation><!-- Transport, Traffic Management &amp; Parking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WIM</masterLabel>
+            <translation><!-- WIM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waste &amp; Recycling</masterLabel>
+            <translation><!-- Waste &amp; Recycling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Well‐Being (incl. Public Health)</masterLabel>
+            <translation><!-- Well‐Being (incl. Public Health) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workforce Development</masterLabel>
+            <translation><!-- Workforce Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Youth Offending</masterLabel>
+            <translation><!-- Youth Offending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Organisational Unit that is being targetted --></help>
+        <label><!-- Organisational Unit --></label>
+        <name>OU_type__c</name>
+        <picklistValues>
+            <masterLabel>A Council Partner</masterLabel>
+            <translation><!-- A Council Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A Council Supplier (complete supplier field)</masterLabel>
+            <translation><!-- A Council Supplier (complete supplier field) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A Specific Subsection of LBH</masterLabel>
+            <translation><!-- A Specific Subsection of LBH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London Borough of Hounslow Council</masterLabel>
+            <translation><!-- London Borough of Hounslow Council --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The responsible director/ chief exec for the 4 directorates within LBH --></help>
+        <label><!-- Responsible Director --></label>
+        <name>Responsible_Director__c</name>
+    </fields>
+    <fields>
+        <help><!-- The specific area of responsibility of the service team being targetted, eg Tidy town collections or blue bade issuing --></help>
+        <label><!-- Specific Function Targetted --></label>
+        <name>Service_Remit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Team --></label>
+        <name>Service_Team__c</name>
+        <picklistValues>
+            <masterLabel>Adults - Community Learning &amp; Disability</masterLabel>
+            <translation><!-- Adults - Community Learning &amp; Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Contracts &amp; Brokerage</masterLabel>
+            <translation><!-- Adults - Contracts &amp; Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Day Support</masterLabel>
+            <translation><!-- Adults - Day Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Direct Payments &amp;Individualised Budgets</masterLabel>
+            <translation><!-- Adults - Direct Payments &amp;Individualised Budgets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Early Years &amp; Childcare</masterLabel>
+            <translation><!-- Adults - Early Years &amp; Childcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Joint Commissioning</masterLabel>
+            <translation><!-- Adults - Joint Commissioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Joint Mental Health Services</masterLabel>
+            <translation><!-- Adults - Joint Mental Health Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Occupational Therapy</masterLabel>
+            <translation><!-- Adults - Occupational Therapy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Older People&apos;s Services</masterLabel>
+            <translation><!-- Adults - Older People&apos;s Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Regulated Provision</masterLabel>
+            <translation><!-- Adults - Regulated Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adults - Social Work Team WMUH</masterLabel>
+            <translation><!-- Adults - Social Work Team WMUH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordable Housing</masterLabel>
+            <translation><!-- Affordable Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Animal Warden</masterLabel>
+            <translation><!-- Animal Warden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benefits</masterLabel>
+            <translation><!-- Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue badges</masterLabel>
+            <translation><!-- Blue badges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Control</masterLabel>
+            <translation><!-- Building Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Rates</masterLabel>
+            <translation><!-- Business Rates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSS - Child Protection &amp; Safeguarding Service</masterLabel>
+            <translation><!-- CSSS - Child Protection &amp; Safeguarding Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSS - Corporate Parenting</masterLabel>
+            <translation><!-- CSSS - Corporate Parenting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSS - Placements &amp; Care Leaving Service</masterLabel>
+            <translation><!-- CSSS - Placements &amp; Care Leaving Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSS - SEN &amp; Disability</masterLabel>
+            <translation><!-- CSSS - SEN &amp; Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSS - Safeguarding, Review&amp; Quality Assurance</masterLabel>
+            <translation><!-- CSSS - Safeguarding, Review&amp; Quality Assurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSSS - Youth Offending</masterLabel>
+            <translation><!-- CSSS - Youth Offending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Safety</masterLabel>
+            <translation><!-- Community Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contingency Planning</masterLabel>
+            <translation><!-- Contingency Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Council Tax</masterLabel>
+            <translation><!-- Council Tax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Services</masterLabel>
+            <translation><!-- Document Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elections</masterLabel>
+            <translation><!-- Elections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental Policy</masterLabel>
+            <translation><!-- Environmental Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facilities Management</masterLabel>
+            <translation><!-- Facilities Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family &amp; Community</masterLabel>
+            <translation><!-- Family &amp; Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Affairs</masterLabel>
+            <translation><!-- Financial Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Assessments</masterLabel>
+            <translation><!-- Financial Assessments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Management</masterLabel>
+            <translation><!-- Fleet Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Safety</masterLabel>
+            <translation><!-- Food Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highways Commissioner</masterLabel>
+            <translation><!-- Highways Commissioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highways Supplier (Hounslow Highways)</masterLabel>
+            <translation><!-- Highways Supplier (Hounslow Highways) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highways Supplier (Hounslow Homes)</masterLabel>
+            <translation><!-- Highways Supplier (Hounslow Homes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - Allocations &amp; Options</masterLabel>
+            <translation><!-- Housing - Allocations &amp; Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - Hounslow Homes</masterLabel>
+            <translation><!-- Housing - Hounslow Homes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - Private Sector</masterLabel>
+            <translation><!-- Housing - Private Sector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - Projects &amp; Partnership</masterLabel>
+            <translation><!-- Housing - Projects &amp; Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - Temporary Accommodation</masterLabel>
+            <translation><!-- Housing - Temporary Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leisure Commissioner</masterLabel>
+            <translation><!-- Leisure Commissioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leisure Supplier (Fusion)</masterLabel>
+            <translation><!-- Leisure Supplier (Fusion) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leisure Supplier (Laing)</masterLabel>
+            <translation><!-- Leisure Supplier (Laing) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensing</masterLabel>
+            <translation><!-- Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Welfare Provision</masterLabel>
+            <translation><!-- Local Welfare Provision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locality Based Early Intervention Service</masterLabel>
+            <translation><!-- Locality Based Early Intervention Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Members Services</masterLabel>
+            <translation><!-- Members Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PFI Team</masterLabel>
+            <translation><!-- PFI Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parking Commissioner,</masterLabel>
+            <translation><!-- Parking Commissioner, --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parking Supplier (Serco)</masterLabel>
+            <translation><!-- Parking Supplier (Serco) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pest Control</masterLabel>
+            <translation><!-- Pest Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning Enforcement</masterLabel>
+            <translation><!-- Planning Enforcement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning Policy</masterLabel>
+            <translation><!-- Planning Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pollution</masterLabel>
+            <translation><!-- Pollution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Development (corporate)</masterLabel>
+            <translation><!-- Property Development (corporate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Health &amp; Safety</masterLabel>
+            <translation><!-- Public Health &amp; Safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registration Service</masterLabel>
+            <translation><!-- Registration Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent Accounting</masterLabel>
+            <translation><!-- Rent Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Road safety</masterLabel>
+            <translation><!-- Road safety --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Effectiveness</masterLabel>
+            <translation><!-- School Effectiveness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Improvement ‐Advisory Services</masterLabel>
+            <translation><!-- School Improvement ‐Advisory Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trading Standards</masterLabel>
+            <translation><!-- Trading Standards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic</masterLabel>
+            <translation><!-- Traffic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Translation Service</masterLabel>
+            <translation><!-- Translation Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport for London</masterLabel>
+            <translation><!-- Transport for London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport planning</masterLabel>
+            <translation><!-- Transport planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waste &amp; Recycling - Supplier (Sita)</masterLabel>
+            <translation><!-- Waste &amp; Recycling - Supplier (Sita) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waste &amp; Recycling Commissioner,</masterLabel>
+            <translation><!-- Waste &amp; Recycling Commissioner, --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Western International Market</masterLabel>
+            <translation><!-- Western International Market --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The name of the Supplier (only use if applicable) --></help>
+        <label><!-- Supplier Name --></label>
+        <name>Supplier_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of selected target. --></help>
+        <label><!-- Target Description --></label>
+        <name>Target_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- A summary of the ticket --></help>
+        <label><!-- Ticket Summary --></label>
+        <name>Ticket_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Ticket that the target is related to --></help>
+        <label><!-- Ticket --></label>
+        <name>Ticket__c</name>
+        <relationshipLabel><!-- Target --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Target Layout</layout>
+        <sections>
+            <label><!-- Account / Person Information --></label>
+            <section>Account / Person Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Target Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- VF Page --></label>
+            <section>VF Page</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LBH Area of Responsibility Target Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Organisational Unit Information --></label>
+            <section>Organisational Unit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Target VF Page --></label>
+            <section>Target VF Page</section>
+        </sections>
+        <sections>
+            <label><!-- Ticket Information --></label>
+            <section>Ticket Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Location Target Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Location Information --></label>
+            <section>Location Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other Target Layout</layout>
+        <sections>
+            <label><!-- (optional) Object References --></label>
+            <section>(optional) Object References</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account --></label>
+        <name>Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LBH Area of Responsibility --></label>
+        <name>LBH_Area_of_Responsibility</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Location --></label>
+        <name>Location</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must select an address. --></errorMessage>
+        <name>Must_specify_address_if_location</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Target_Employee --></label>
+        <name>Target_Employee</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Target_LBH_Area_of_Responsibility --></label>
+        <name>Target_LBH_Area_of_Responsibility</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Target_Location --></label>
+        <name>Target_Location</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Target_New_Customer --></label>
+        <name>Target_New_Customer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Target_Other --></label>
+        <name>Target_Other</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Target_Selected_Customer --></label>
+        <name>Target_Selected_Customer</name>
+    </webLinks>
+</CustomObjectTranslation>

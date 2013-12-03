@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>16:45:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>British Summer Time</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Europe/London</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>16:45:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Greenwich Mean Time</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>GMT</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <description>Boxing Day</description>
+        <isRecurring>true</isRecurring>
+        <name>Boxing Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2013-12-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <description>Christmas Day</description>
+        <isRecurring>true</isRecurring>
+        <name>Christmas Day</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2013-12-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <description>Early May bank holiday</description>
+        <isRecurring>true</isRecurring>
+        <name>Early May bank holiday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>First</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2014-05-05</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2014-04-21</activityDate>
+        <description>Easter Monday 2014</description>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2015-04-06</activityDate>
+        <description>Easter Monday 2015</description>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2014-04-18</activityDate>
+        <description>Good Friday 2014</description>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2015-04-03</activityDate>
+        <description>Good Friday 2015</description>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <description>Late May Bank Holiday</description>
+        <isRecurring>true</isRecurring>
+        <name>Late May Bank Holiday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2014-05-26</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <description>New Year’s Day</description>
+        <isRecurring>true</isRecurring>
+        <name>New Year’s Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2013-01-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <description>Summer bank holiday</description>
+        <isRecurring>true</isRecurring>
+        <name>Summer bank holiday</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>August</recurrenceMonthOfYear>
+        <recurrenceStartDate>2013-08-26</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2013-12-27</activityDate>
+        <description>Civic Centre 3 day Christmas Closure</description>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Closure Day 1 - 2013</name>
+    </holidays>
+    <holidays>
+        <activityDate>2014-12-29</activityDate>
+        <description>Civic Centre 3 Day Christmas Closure</description>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Closure Day 1 - 2014</name>
+    </holidays>
+    <holidays>
+        <activityDate>2013-12-30</activityDate>
+        <description>Civic Centre 3 Day Christmas Closure</description>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Closure Day 2 - 2013</name>
+    </holidays>
+    <holidays>
+        <activityDate>2014-12-30</activityDate>
+        <description>Civic Centre 3 Day Christmas Closure</description>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Closure Day 2 - 2014</name>
+    </holidays>
+    <holidays>
+        <activityDate>2013-12-31</activityDate>
+        <description>Civic Centre 3 Day Christmas Closure</description>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Closure Day 3 - 2013</name>
+    </holidays>
+    <holidays>
+        <activityDate>2014-12-31</activityDate>
+        <description>Civic Centre 3 Day Christmas Closure</description>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Closure Day 3 - 2014</name>
+    </holidays>
+</BusinessHoursSettings>

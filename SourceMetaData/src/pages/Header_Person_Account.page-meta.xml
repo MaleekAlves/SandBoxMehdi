@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>28.0</apiVersion>
+    <description>Banner for top of person account object. Also shows warning for flagged contacts.</description>
+    <label>Header_Person_Account</label>
+</ApexPage>

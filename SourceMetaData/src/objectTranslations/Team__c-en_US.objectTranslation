@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Team</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teams</value>
+    </caseValues>
+    <fields>
+        <help><!-- A short description of the team (255 chars Max) --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the team has a mailbox then this is linked to a user record in salesforce to allow emails to be sent to that mailbox. --></help>
+        <label><!-- Team User Account --></label>
+        <name>Team_User_Account__c</name>
+        <relationshipLabel><!-- Teams --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Management Team --></label>
+        <name>Management_Team</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Team --></label>
+        <name>Service_Team</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

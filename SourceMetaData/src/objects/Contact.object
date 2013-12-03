@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MapHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Flagged__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Account.Flagged__c, IMAGE(&quot;/img/samples/flag_red.gif&quot;,&quot;Customer flagged&quot;),&quot;&quot;)</formula>
+        <inlineHelpText>Customer is flagged?</inlineHelpText>
+        <label>Contact Flagged</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Correspondence_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Current_Correspondence_Address__c</formula>
+        <inlineHelpText>Contact&apos;s current correspondence address.</inlineHelpText>
+        <label>Primary Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LBH_Department__c</fullName>
+        <description>The department that LBH employee belongs to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The department that LBH employee belongs to.</inlineHelpText>
+        <label>LBH Department</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LBH_Division__c</fullName>
+        <description>The LBH Division that the employee belongs to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The LBH Division that the employee belongs to</inlineHelpText>
+        <label>LBH Division</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LBH_Employee_Number__c</fullName>
+        <description>The unique employee number of the LBH employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique employee number of the LBH employee.</inlineHelpText>
+        <label>LBH Employee Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LBH_Extension__c</fullName>
+        <description>The extension on which the LBH employee can be reached</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The extension on which the LBH employee can be reached</inlineHelpText>
+        <label>LBH Extension</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LBH_Unit__c</fullName>
+        <description>The LBH unit that the employee belongs to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The LBH unit that the employee belongs to.</inlineHelpText>
+        <label>LBH Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Name_Changed__c</fullName>
+        <description>Date that the individuals surname changed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When did the person change their surname?</inlineHelpText>
+        <label>Date of Name Change</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Catering Concession</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PhoneNumbersMerged__c</fullName>
+        <description>All the phone numbers for a contact combined. Not used for page layouts but used in lookup filters</description>
+        <externalId>false</externalId>
+        <formula>OtherPhone + &quot; , &quot; +  HomePhone + &quot; , &quot; +  MobilePhone</formula>
+        <inlineHelpText>All the phone numbers for a contact combined. Not used for page layouts but used in lookup filters</inlineHelpText>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Name__c</fullName>
+        <description>Preferred Name</description>
+        <externalId>false</externalId>
+        <label>Preferred Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Last_Name__c</fullName>
+        <description>If the person has changed their surname this field will hold their previous surname (ie maiden name)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the previous surname, if the person has changed it?</inlineHelpText>
+        <label>Previous Surname</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Address_House_Number__c</fullName>
+        <description>The house number of the contact&apos;s primary address. Set only by workflow and used</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Primary address house number</inlineHelpText>
+        <label>House Number / Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Address_Postcode__c</fullName>
+        <description>The postcode of the persons primary address. Set only by workflow</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Primary address postcode</inlineHelpText>
+        <label>Postcode</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Salutation_Full_Name__c</fullName>
+        <description>The Full Name of the Contact including Salutation</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Salutation) +&quot; &quot;+  FirstName + &quot; &quot;+  LastName</formula>
+        <inlineHelpText>The Full Name of the Contact including Salutation</inlineHelpText>
+        <label>Salutation Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user account that the contact is associated with</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user account that the contact is associated with</inlineHelpText>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Work_Location__c</fullName>
+        <description>The staff members primary work location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The staff members primary work location</inlineHelpText>
+        <label>Work Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Citizens</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.PHONE3</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.IS_PERSON_ACCOUNT</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Citizens</label>
+    </listViews>
+    <listViews>
+        <fullName>BirthdaysThisMonth</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CONTACT.BIRTHDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.BIRTHDATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Birthdays This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <namedFilters>
+        <fullName>Case_00Nb0000003dtFGEAY</fullName>
+        <active>true</active>
+        <field>Case.REP_Customer_Representative__c</field>
+        <filterItems>
+            <field>Contact.Account.Type</field>
+            <operation>equals</operation>
+            <value>Councillor, MP</value>
+        </filterItems>
+        <infoMessage>Use this window to select who is representing the customer in creating the goal. It defaults to listing councillors but you can look for any person record</infoMessage>
+        <isOptional>true</isOptional>
+        <name>Case_Customer Representative</name>
+    </namedFilters>
+    <namedFilters>
+        <fullName>Case_Contact</fullName>
+        <active>true</active>
+        <field>Case.ContactId</field>
+        <filterItems>
+            <field>Contact.Account.Type</field>
+            <operation>equals</operation>
+            <value>Customer,Councillor, MP</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+        <name>Case_Contact Name</name>
+    </namedFilters>
+    <namedFilters>
+        <fullName>nf_01Ib0000000IeITEA0_00Nb0000003fsQwEAI</fullName>
+        <active>true</active>
+        <field>Representative__c.Representative__c</field>
+        <filterItems>
+            <field>Contact.Account.Type</field>
+            <operation>equals</operation>
+            <value>Councillor, MP</value>
+        </filterItems>
+        <infoMessage>Use this window to select who is representing the customer in creating the goal. It defaults to listing councillors but you can look for any person record</infoMessage>
+        <isOptional>true</isOptional>
+        <name>Representative_Contact</name>
+    </namedFilters>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>External</fullName>
+        <active>true</active>
+        <description>A contact who is not an employee of the Council</description>
+        <label>External</label>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catering Concession</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Cllr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rt Hon</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>LBH_Employee</fullName>
+        <active>true</active>
+        <description>A record type corresponding to contacts who are LBH Staff</description>
+        <label>LBH Employee</label>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catering Concession</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Cllr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miss</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rt Hon</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE3</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE4</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE5</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.FIRST_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.LAST_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.BIRTHDATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Flagged__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Current_Correspondence_Address__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE3</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE4</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE5</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Primary_Address_House_Number__c</lookupFilterFields>
+        <lookupFilterFields>PhoneNumbersMerged__c</lookupFilterFields>
+        <lookupFilterFields>Primary_Address_Postcode__c</lookupFilterFields>
+        <lookupFilterFields>CONTACT.BIRTHDATE</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE4</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE5</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE3</searchFilterFields>
+        <searchFilterFields>CONTACT.EMAIL</searchFilterFields>
+        <searchFilterFields>CONTACT.BIRTHDATE</searchFilterFields>
+        <searchFilterFields>Current_Correspondence_Address__c</searchFilterFields>
+        <searchFilterFields>Contact_Flagged__c</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.SALUTATION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.FIRST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.LAST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE3</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Flagged__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Current_Correspondence_Address__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <validationRules>
+        <fullName>First_Name_must_be_completed</fullName>
+        <active>true</active>
+        <description>Contact must have a First name</description>
+        <errorConditionFormula>ISBLANK( FirstName )</errorConditionFormula>
+        <errorMessage>You must type a First Name before you can save a contact</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>One_phone_field_must_be_completed</fullName>
+        <active>true</active>
+        <description>Checks to see if at least one phone field is completed</description>
+        <errorConditionFormula>( ISBLANK( HomePhone ) ) &amp;&amp;
+( ISBLANK( MobilePhone ) ) &amp;&amp; 
+( ISBLANK( OtherPhone ) )&amp;&amp;
+( ISBLANK( Phone ) )</errorConditionFormula>
+        <errorMessage>At least one Phone field must be completed</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendGmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Gmail</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Contact_Email}&lt;{!Contact_LastName}, {!Contact_FirstName}&gt;&amp;tf=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Test_Contact_Btn</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Test Contact Btn</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu2.salesforce.com/500/e</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Contact_MailingCountry}&amp;csz={!Contact_MailingCity}+{!Contact_MailingState}+{!Contact_MailingPostalCode}+&amp;addr={!Contact_MailingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooWeather</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Weather</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+</CustomObject>

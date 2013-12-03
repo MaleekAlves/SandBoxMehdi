@@ -1,0 +1,14 @@
+*** TICKET ASSIGNMENT NOTIFICATION ***  
+
+The following ticket has been assigned to you:  
+
+Ticket Summary:  # {!Ticket__c.Name}: {!Ticket__c.GLOBAL_Ticket_Summary__c}
+Customer: {!Ticket__c.GLOBAL_Customer_Name__c}
+Opened Date: {!Ticket__c.GLOBAL_Opened_Date__c}
+Received Date: {!Ticket__c.GLOBAL_Received_Date__c}
+
+SLA: {!Ticket__c.GLOBAL_SLA__c}
+SLA Days Remaining: {!Ticket__c.GLOBAL_SLA_Days_Remaining__c}
+
+
+Click on the link to access the ticket directly:  {!Ticket__c.Link}

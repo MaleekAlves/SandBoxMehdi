@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Position</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Positions</value>
+    </caseValues>
+    <fields>
+        <help><!-- The date at which the position ended (blank if position is ongoing) --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- A short description of the position. --></help>
+        <label><!-- Short Description --></label>
+        <name>Short_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The member of staff that holds the position --></help>
+        <label><!-- Staff Member --></label>
+        <name>Staff_Member__c</name>
+        <relationshipLabel><!-- Positions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The start date of the position. --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The team that the position is in. (this could be a service team or management team) --></help>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <relationshipLabel><!-- Positions --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

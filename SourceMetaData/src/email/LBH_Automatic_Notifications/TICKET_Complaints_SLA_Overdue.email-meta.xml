@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Complaints Ticket is now overdue. Sent automatically when SLA has expired.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TICKET Complaints SLA Overdue</name>
+    <style>none</style>
+    <subject>Ticket is now overdue: {!Ticket__c.GLOBAL_Ticket_Summary_Brief__c} Ref # {!Ticket__c.Name}</subject>
+    <textOnly>*** TICKET IS NOW OVERDUE ***
+
+The ticket # {!Ticket__c.Name}:  {!Ticket__c.GLOBAL_Ticket_Summary_Brief__c}  is now overdue.
+
+Please provide an update on the ticket immediately or send a copy of the response if it has already been dealt with.
+
+Ticket Information: Customer -  {!Ticket__c.GLOBAL_Customer_Name__c}
+Opened Date - {!Ticket__c.GLOBAL_Opened_Date__c}
+Current Owner - {!Ticket__c.OwnerFullName}
+
+Stage - {!Ticket__c.CMP_Complaint_Stage__c}
+Reason - {!Ticket__c.CMP_Reason_for_Complaint__c}
+Additional Information - {!Ticket__c.GLOBAL_Additional_Info__c}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

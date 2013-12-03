@@ -1,0 +1,12 @@
+*** GOAL SLA BREACHED ALERT ***  
+
+SLA of the following goal SLA has been breached:
+
+Goal Summary:  {!Case.CaseNumber}: {!Case.Case_Summary__c}
+Customer: {!Case.Contact}
+Opened Date: {!Case.Opened_Date__c}
+
+SLA: {!Case.SLA__c}
+Owner:  {!Case.OwnerFullName}  
+
+Click on the link to access the goal directly:  {!Case.Link}

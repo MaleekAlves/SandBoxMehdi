@@ -1,0 +1,14 @@
+<apex:page standardController="Account" >
+<script src="/support/console/22.0/integration.js"/>
+<style>
+.HeaderText {font-size:14px; text-decoration: none; color:#FFFFFF; background-color:transparent; font-weight:bold;}
+.HeaderText:Hover {font-size:14px; text-decoration: none; color:#FFFFFF; font-weight:bold;}
+</style>
+<div align="left" valign="center" style="background-color:#ED7D31;">
+<table border="0" align="center" width="100%">
+    <tr><td align="left"><apex:image title="Flagged customer" value="/img/icon/flag24.png" rendered="{!Account.Flagged__c}"/></td>
+    <td align="center"><a class="HeaderText">{!UPPER(Account.Type)} - {!Account.Name}</a></td>
+    <td align="right"><apex:image title="Flagged customer" value="/img/icon/flag24.png" rendered="{!Account.Flagged__c}" /></td></tr>
+</table>
+</div>
+</apex:page>

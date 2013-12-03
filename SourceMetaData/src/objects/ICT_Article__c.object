@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Articlein a Knowledge base to support the ICT Service Desk</description>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Article_Content__c</fullName>
+        <description>The Content of the ICT Article</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Content of the ICT Article</inlineHelpText>
+        <label>Article Content</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Article_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Article Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Article_Type__c</fullName>
+        <description>The Type of article that this record corresponds to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Type of article that this record corresponds to.</inlineHelpText>
+        <label>Article Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>FAQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Workaround</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Intranet_Link__c</fullName>
+        <description>A link to the article on the intranet</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A link to the article on the intranet</inlineHelpText>
+        <label>Intranet Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>related_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Article</label>
+        <referenceTo>ICT_Article__c</referenceTo>
+        <relationshipLabel>ICT Articles</relationshipLabel>
+        <relationshipName>ICT_Articles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>ICT Article</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Article_Type__c</columns>
+        <columns>Article_Name__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Articles</fullName>
+        <columns>NAME</columns>
+        <columns>Article_Type__c</columns>
+        <columns>Article_Name__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Articles</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Ar{0000000}</displayFormat>
+        <label>ICT Article No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>ICT Articles</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Article_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Article_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Article_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Article_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Article_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Article_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Generate_Pdf</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Generate Pdf Attachment</masterLabel>
+        <openType>noSidebar</openType>
+        <page>Generate_PDF_ICT_Article</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,5 @@
+<apex:page sidebar="false" showHeader="false" showChat="false" standardController="Ticket__c">
+    <apex:outputLink value="{! URLFOR($Resource.ICTServiceCategoriesDocument) }"  target="_blank"  >Link to pdf document with full details</apex:outputLink>
+    <table width="100%" border="0"><tr><td><apex:image width="100%" url="{! URLFOR($Resource.ICT_Matrix_v1) }"/></td></tr></table>
+    
+</apex:page>

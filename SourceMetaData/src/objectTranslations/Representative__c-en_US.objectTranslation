@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Representative</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Representatives</value>
+    </caseValues>
+    <fields>
+        <help><!-- Goal being represented. --></help>
+        <label><!-- Goal --></label>
+        <name>Goal__c</name>
+        <relationshipLabel><!-- Additional Representatives --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contact who is representing the goal. --></help>
+        <label><!-- Representative --></label>
+        <name>Representative__c</name>
+        <relationshipLabel><!-- Goals Representated --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You have already selected this representative as the primary rep of the goal. --></errorMessage>
+        <name>Additional_rep_not_same_as_primary_rep</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Representative --></label>
+        <name>New_Representative</name>
+    </webLinks>
+</CustomObjectTranslation>

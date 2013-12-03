@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Log Finance Ticket</label>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>GLOBAL_Goal__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Ticket__c</targetObject>
+    <targetParentField>GLOBAL_Customer__c</targetParentField>
+    <targetRecordType>Ticket__c.CSC_Finance_Queries_and_Training</targetRecordType>
+    <type>Create</type>
+</QuickAction>

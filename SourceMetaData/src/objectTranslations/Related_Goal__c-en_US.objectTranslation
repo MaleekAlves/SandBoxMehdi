@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Goals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Goal From --></label>
+        <name>Goal_From__c</name>
+        <relationshipLabel><!-- Related Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Goal To Created Date --></label>
+        <name>Goal_To_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal To Status --></label>
+        <name>Goal_To_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal To Subject --></label>
+        <name>Goal_To_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal To --></label>
+        <name>Goal_To__c</name>
+        <relationshipLabel><!-- Related Goals (Goal To) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Related Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Case Details --></label>
+            <section>Related Case Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

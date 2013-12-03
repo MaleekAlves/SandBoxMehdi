@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Email_BCC_Addresses__c</fullName>
+        <description>The emaill addrs that the email has been BCC&apos;d to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The emaill addrs that the email has been BCC&apos;d to</inlineHelpText>
+        <label>Email BCC Addresses</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email_Body__c</fullName>
+        <description>A concatenated summary of the email body</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A concatenated summary of the email body</inlineHelpText>
+        <label>Email Body</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email_CC_Addresses__c</fullName>
+        <description>The email addrs that the email has been cc&apos;d to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The email addrs that the email has been cc&apos;d to</inlineHelpText>
+        <label>Email CC Addresses</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email_Comment__c</fullName>
+        <description>The comment that was sent in with the email from the service team</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The comment that was sent in with the email from the service team</inlineHelpText>
+        <label>Email Comment</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Email_Status_Reported_String__c</fullName>
+        <description>The status that has been reported in the email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status that has been reported in the email</inlineHelpText>
+        <label>Status Reported</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Subject__c</fullName>
+        <description>The subject line of the sent email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The subject line of the sent email.</inlineHelpText>
+        <label>Email Subject</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_To_Addresses__c</fullName>
+        <description>The addrs the email has been sent to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The addrs the email has been sent to.</inlineHelpText>
+        <label>Email To Addresses</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notification_From_Address__c</fullName>
+        <description>The email address that the notification was sent from</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The email address that the notification was sent from</inlineHelpText>
+        <label>Notification From Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notification_From_Name__c</fullName>
+        <description>The name of the person who has sent in the notification (from the email)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the person who has sent in the notification (from the email)</inlineHelpText>
+        <label>Notification From Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notification_Type__c</fullName>
+        <description>The notification type that has been supplied by the service team in the email (error is used where one of the 3 notifications has not been matched)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The notification type that has been supplied by the service team in the email (error is used where one of the 3 notifications has not been matched)</inlineHelpText>
+        <label>Notification Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <description>A summary of the task</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A summary of the task</inlineHelpText>
+        <label>Summary</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Service_Responses</fullName>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>Notification_From_Name__c</columns>
+        <columns>Email_Status_Reported_String__c</columns>
+        <columns>Notification_Type__c</columns>
+        <columns>Email_Comment__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.External_Notifications</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <label>My Open Service Responses</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

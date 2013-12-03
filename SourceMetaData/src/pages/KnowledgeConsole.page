@@ -1,0 +1,118 @@
+<apex:page sidebar="false" title="Article List" controller="ExtKnowledgeConsole" >
+<style>
+body, html {height:100%; display:block; overflow:none;}
+.brandSecondaryBrd.apexDefaultPageBlock{position:absolute; bottom:0px; top:0px; left: 0px; right: 0px; display:block; overflow:none; margin: 0px;}
+</style>
+
+<apex:form >
+<apex:pageBlock id="pnlMain" >
+    <apex:outputPanel layout="block" style="position:absolute; bottom:0px; top:0px; left: 0px; right: 0px;">
+        <apex:actionRegion rendered="{!NOT(modeView)}">
+        
+            <!-- Disable return keypress for inputbox -->
+            <script language="javascript" type="text/javascript">
+                function stopRKey(evt) {
+                    var evt = (evt) ? evt : ((event) ? event : null);
+                    var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+                    if ((evt.keyCode == 13) && (node.type=="text")) {return false;}
+                }
+                document.onkeypress = stopRKey; 
+                
+                function OnItem(obj) {
+                    obj.style.backgroundColor="#E1F6FF";
+                }
+
+                function OffItem(obj) {
+                    obj.style.backgroundColor="transparent";
+                }
+            </script>
+            
+            <!-- Title -->
+            <table border="0">
+                <tr height="32">
+                    <td valign="center"><img src="{!txtInstance}/img/icon/forecasts32.png"/></td>
+                    <td valign="center"><a style="color:black; font-size:14px; font-weight:bold;">London Borough of Hounslow Knowledge</a></td>
+                </tr>
+            </table>
+            <br/>
+            
+            <!-- Search bar -->
+            <table width="100%" border="0"><tr>
+                <td>Search:&nbsp;</td>
+                <td width="100%">
+                    <apex:inputText id="txtSearchArticles" value="{!searchString}" style="width:100%;">
+                        <apex:actionSupport event="onkeyup" reRender="pnlSearchResults,lblPage,btnPrev,btnNext,lblRecords" status="stsSearch" action="{!Search}"/>
+                    </apex:inputText>
+                </td>
+                <td width="30">
+                <apex:actionStatus rendered="true" id="stsSearch">
+                    <apex:facet name="start"> 
+                        <apex:image url="{!txtInstance}/img/loading32.gif" height="12" width="12" />                       
+                    </apex:facet>
+                </apex:actionStatus>
+                </td></tr>
+            </table>
+            <br/>
+            
+            <!-- Suggested Articles -->
+            <apex:commandButton action="{!SuggestedSearch}" value="Suggested Articles" reRender="txtSearchArticles,pnlSearchResults,lblPage,lblRecords,btnPrev,btnNext"/>
+            <apex:commandButton value="Support Process Overview" action="{!OpenGoalSummary}" reRender="pnlMain" />
+            <apex:commandButton action="{!ShowAll}" value="Show All" reRender="txtSearchArticles,pnlSearchResults,lblPage,lblRecords,btnPrev,btnNext"/>
+            <br/><br/>
+            
+            <!-- Search results -->
+            <apex:panelGrid width="100%" id="pnlSearchResults" rendered="{!NOT(modeView)}" >
+                <table width="99%" cellspacing="0" height="100%">
+                <tr style="background-color:#1797C0; color:white;">
+                <th width="8%"></th>
+                <th width="25%">Title</th>
+                <th width="67%">Summary</th>
+                </tr>
+                </table>
+            
+                <!-- Display Articles -->
+                <knowledge:articleList articleTypes="" keyword="{! IF(len(searchString) > 1, searchString, '') }" articleVar="article" hasMoreVar="false" pageSize="10" pageNumber="{!pageNumber}">
+                    <table width="99%" cellspacing="0" cellpadding="3">  <tr style="cursor:default;">
+                        <apex:actionRegion >
+                            <td width="8%">
+                                <apex:image url="/img/icon/documents16.png">
+                                </apex:image>
+                            </td>
+                            <td width="25%">
+                                <apex:commandLink title="{!article.articleTypeLabel}"  value="{!article.title}" action="{!OpenContent}" reRender="pnlMain" immediate="true">
+                                    <apex:param name="ArticleUrl" value="{!article.urlName}" />
+                                </apex:commandLink>
+                            </td>
+                            <td width="67%">
+                                <apex:outputText title="{!article.articleTypeLabel}" value="{!article.abstract}"/>
+                            </td>
+                        </apex:actionRegion>    
+                    </tr>   
+                    </table>
+                </knowledge:articleList>
+                
+            </apex:panelGrid>
+            <br/>
+            
+            <!-- Previous / Next Buttons -->
+            <table align="center" border="0"><tr><td>
+                <apex:commandButton id="btnPrev" action="{!Previous}" value="Previous Page" disabled="{!IF(prevRequired=true,'false','true')}" reRender="txtSearchArticles,pnlSearchResults,lblPage,btnPrev,btnNext,lblRecords" />&nbsp;
+                <apex:outputLabel value="Page {!pageNumber}/{!CEILING(ArticleCount / maxSize)}" id="lblPage"></apex:outputLabel>&nbsp;
+                <apex:commandButton id="btnNext" action="{!Next}" value="Next Page" disabled="{!IF(nextRequired=true,'false','true')}" reRender="txtSearchArticles,pnlSearchResults,lblPage,btnPrev,btnNext,lblRecords" />
+            </td></tr></table>
+            
+        </apex:actionRegion>
+        
+        <apex:actionRegion rendered="{!modeView}" >
+            <apex:commandButton value="< Back to Search" action="{!btnReturn}" />
+            <div style="width:100%; margin: 2px 2px 2px 2px; height:95%; overflow:auto; background-color:white;">
+                <apex:outputtext value="{!myContent}" escape="false"/>
+            </div>
+        </apex:actionRegion>
+        
+    </apex:outputPanel>
+</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

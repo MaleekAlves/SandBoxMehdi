@@ -1,0 +1,13 @@
+*** GOAL ASSIGNMENT NOTIFICATION ***  
+
+The following goal has been assigned to you.  
+
+Goal Summary: {!Case.Case_Summary__c}
+Customer: {!Case.Contact}
+Opened Date: {!Case.Opened_Date__c}
+
+SLA Days Remaining: {!Case.SLA_Days_Remaining__c}
+SLA: {!Case.SLA__c}
+
+
+Click on the link to access the goal directly:  {!Case.Link}

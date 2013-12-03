@@ -1,0 +1,9 @@
+<apex:page sidebar="false" showHeader="false">
+<apex:composition template="LBH_FORM_TEM">
+<apex:define name="main_container">
+
+<flow:interview name="Service"></flow:interview>
+</apex:define>
+</apex:composition>
+
+</apex:page>

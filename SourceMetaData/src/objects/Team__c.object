@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Teams are group or roles within LBH that contacs (staff) can belong to. Tickets are assigned to teams.</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>A short description of the team</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A short description of the team (255 chars Max)</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Team_User_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>If the team has a mailbox then this is linked to a user record in salesforce to allow emails to be sent to that mailbox.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the team has a mailbox then this is linked to a user record in salesforce to allow emails to be sent to that mailbox.</inlineHelpText>
+        <label>Team User Account</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Team</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Team</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Team Name</label>
+        <type>Text</type>
+    </nameField>
+    <namedFilters>
+        <fullName>nf_01Ib0000000IJNqEAO_00N11000000JxWAEA0</fullName>
+        <active>true</active>
+        <field>Ticket__c.GLOBAL_Assigned_Service_Team__c</field>
+        <filterItems>
+            <field>Team__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Service Team</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+        <name>Ticket_Assigned Service Teamam</name>
+    </namedFilters>
+    <namedFilters>
+        <fullName>nf_01Ib0000000IJNqEAO_00N11000000JxWPEA0</fullName>
+        <active>true</active>
+        <field>Ticket__c.GLOBAL_Assigned_Management_Team__c</field>
+        <filterItems>
+            <field>Team__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Management Team</value>
+        </filterItems>
+        <infoMessage>The Management team that are responsible for the service team that have been assigned the ticket (eg when ticket Escalates or Breaches this team will be notified if an email address is associated with them).</infoMessage>
+        <isOptional>false</isOptional>
+        <name>Ticket_Assigned Management Team</name>
+    </namedFilters>
+    <pluralLabel>Teams</pluralLabel>
+    <recordTypes>
+        <fullName>Management_Team</fullName>
+        <active>true</active>
+        <description>A team of managers within the Council, note this could just include one memeber.</description>
+        <label>Management Team</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Service_Team</fullName>
+        <active>true</active>
+        <description>A team of staff within a service area of the Council</description>
+        <label>Service Team</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,77 @@
+<apex:page standardController="Ticket__c"  showheader="false" renderAs="pdf" standardStylesheets="false">
+    <!-- <apex:stylesheet value="/resource/1374669121000/LBHStyles"/> -->
+    <apex:stylesheet value="{!URLFOR($Resource.LBHStyles, 'pdfStyles.css')}"/>
+    
+    <apex:panelGrid columns="4" cellpadding="10"  styleClass="tableClass"  headerClass="pageTablehead">
+        <apex:facet name="header">Ticket Dispatch</apex:facet>
+        <apex:outputLabel value="Ticket Owner" for="OwnerName"/>
+        <apex:outputText id="OwnerName" value="{!Ticket__c.Owner.Name}"/>            
+        <apex:outputLabel value="Dispatched By" for="DispatchedBy"/>
+        <apex:outputText id="DispatchedBy" value="{!$User.FirstName} {!$User.LastName}"/>            
+        <apex:outputLabel value="Dispatch Date" for="DispatchDate"/>
+        <apex:outputText id="DispatchDate" value="{!NOW()}"/>
+        <apex:outputLabel value="Ticket Type" for="TicketType"/>
+        <apex:outputText id="TicketType" value="{!Ticket__c.RecordType.Name}"/>  
+        <apex:outputLabel value="Escalation Email" for="EscalationEmail"/>
+        <apex:outputText id="EscalationEmail" value="{!Ticket__c.GLOBAL_Escalation_Email__c}"/>  
+    </apex:panelGrid>
+    <br/>
+    
+    <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Ticket_Field_Set}" var="f" columns="2" rowClasses="odd,even"  columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+        <apex:facet name="header" >Ticket Information</apex:facet>
+        <apex:column value="{!f.Label}" />
+        <apex:column value="{!Ticket__c[f]}" />
+    </apex:dataTable>
+    <br/>
+    
+    <apex:panelGroup rendered="{! (Ticket__c.RecordType.DeveloperName=='CCC_Complaint_Adult_Social_Care') || (Ticket__c.RecordType.DeveloperName=='CCC_Complaint_Childrens_Social_Care') }" >
+        <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Social_Care_Complaints_Field_Set}" var="f" columns="2" rowClasses="odd,even" columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+            <apex:facet name="header" >Social Care Compliant Additional Information</apex:facet>
+            <apex:column value="{!f.Label}" />
+            <apex:column value="{!Ticket__c[f]}" />
+        </apex:dataTable>
+        <br/>
+    </apex:panelGroup>
+    
+    <apex:panelGroup rendered="{!Ticket__c.RecordType.DeveloperName=='CCC_Request_for_Information'}" >
+        <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Inf_Request_Field_Set}" var="f" columns="2" rowClasses="odd,even" columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+            <apex:facet name="header" >Information Request Details</apex:facet>
+            <apex:column value="{!f.Label}" />
+            <apex:column value="{!Ticket__c[f]}" />
+        </apex:dataTable>
+        <br/>
+    </apex:panelGroup>
+    
+    <apex:panelGroup rendered="{!Ticket__c.RecordType.DeveloperName=='CCC_Complaints'}" >
+        <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Complaint_Field_Set}" var="f" columns="2" rowClasses="odd,even" columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+            <apex:facet name="header" >Complaint/ Enquiry Details</apex:facet>
+            <apex:column value="{!f.Label}" />
+            <apex:column value="{!Ticket__c[f]}" />
+        </apex:dataTable>
+        <br/>
+    </apex:panelGroup>
+    
+    <apex:panelGroup rendered="{!Ticket__c.RecordType.DeveloperName=='Highways'}" >
+        <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Highways_Field_Set}" var="f" columns="2" rowClasses="odd,even" columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+            <apex:facet name="header" >Highways Details</apex:facet>
+            <apex:column value="{!f.Label}" />
+            <apex:column value="{!Ticket__c[f]}" />
+        </apex:dataTable>
+        <br/>
+    </apex:panelGroup>
+    
+    <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Customer_Field_Set}" var="f" columns="2" rowClasses="odd,even" columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+        <apex:facet name="header" >Customer Information</apex:facet>
+        <apex:column value="{!f.Label}" />
+        <apex:column value="{!Ticket__c[f]}" />
+    </apex:dataTable>
+    <br/>
+    
+    <apex:dataTable value="{!$ObjectType.Ticket__c.FieldSets.Goal_Field_Set}" var="f" columns="2" rowClasses="odd,even" columnsWidth="300px,300px" styleClass="tableClass"  headerClass="tablehead" border="1">
+        <apex:facet name="header" >Case Information</apex:facet>
+        <apex:column value="{!f.Label}" />
+        <apex:column value="{!Ticket__c[f]}" />
+    </apex:dataTable>
+    <!-- <c:TicketPdfDispatchComponent /> -->
+    
+</apex:page>

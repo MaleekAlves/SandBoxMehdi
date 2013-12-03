@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>For use with the confirm integration</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Service_Code__c</fullName>
+        <description>Confirm service code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirm service code</inlineHelpText>
+        <label>Service Code</label>
+        <length>10</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Description__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Confirm Service Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirm Service Description</inlineHelpText>
+        <label>Service Description</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Subject_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Confirm subject code (required, unique)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirm subject code (required, unique)</inlineHelpText>
+        <label>Subject Code</label>
+        <length>10</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Confirm Service Codes</label>
+</CustomObject>

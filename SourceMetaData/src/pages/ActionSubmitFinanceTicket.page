@@ -1,0 +1,39 @@
+<apex:page controller="ActionSubmitFinanceTicketController">
+    <apex:form >
+
+    <apex:pageBlock rendered="{!showForm}" >
+
+        <apex:pageBlockSection columns="1" >
+             
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Adjustment or Service Request" />
+                <apex:selectList size="1" value="{!myTicket.RecordtypeId}">
+                    <apex:selectOptions value="{!RecordTypeList}"></apex:selectOptions>
+                </apex:selectList>
+            </apex:pageBlockSectionItem>
+            
+            <apex:repeat value="{!finaceTicketFields }" var="f"> 
+                <apex:inputField value="{!myTicket[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+            </apex:repeat>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="File Attachment" for="file" />
+                <apex:inputFile value="{!attachment.body}" filename="{!attachment.name}" id="file"/>
+            </apex:pageBlockSectionItem>
+            
+            </apex:pageBlockSection> 
+        <apex:commandButton action="{!submit}" value="Submit" id="submitButton" />
+    </apex:pageBlock>
+    
+    <apex:pageBlock id="resultsArea" rendered="{!showResults}">
+    
+        That worked!
+        
+        Ticket Created = {!myTicket.Name} 
+        {!myTicket.Id} 
+        {!myTicket.CreatedDate}
+    
+    </apex:pageBlock>
+
+    </apex:form>  
+</apex:page>

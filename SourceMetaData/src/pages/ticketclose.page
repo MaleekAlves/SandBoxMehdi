@@ -1,0 +1,24 @@
+<apex:page standardController="Ticket__c" showHeader="false">
+  
+    <apex:form >
+        <apex:pageBlock title="Close Ticket">
+            <apex:pageMessages />
+            <apex:pageBlockSection >
+            
+                
+                <apex:inputField value="{!Ticket__c.GLOBAL_Ticket_Status__c}" id="statusField"  />
+                <apex:repeat value="{!$ObjectType.Ticket__c.FieldSets.Social_Care_Complaint_Closed_Field_Set }" var="f"> 
+                    <apex:inputField value="{!Ticket__c[f]}"/>
+                </apex:repeat>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" collapsible="true">
+                <apex:inputField value="{!Ticket__c.GLOBAL_Closing_Details__c}" />
+            </apex:pageBlockSection>
+            
+            <apex:commandButton action="{!save}" value="Save" id="saveButton"/>
+            <apex:commandButton action="{!cancel}" value="Cancel" id="cancelButton"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

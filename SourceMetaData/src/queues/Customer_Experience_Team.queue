@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>ictservicedesk@hounslow.gov.uk</email>
+    <name>Customer Experience Team</name>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ICT_Article__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Ticket__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,23 @@
+<apex:page standardController="Ticket__c" >
+<apex:includeScript value="/support/console/28.0/integration.js"/>
+<!-- Simply closes the current tab, or redirects to parent goal of the ticket. Used when a user does not have view (MVC) access to the record of a specific record type. -->
+<script> 
+    function CloseMe() {
+        sforce.console.getEnclosingTabId(closeSubtab);
+    }
+    var closeSubtab = function closeSubtab(result) {
+        var tabId = result.id;
+        sforce.console.closeTab(tabId);
+    };
+  
+    alert('You do not have permission to access the record {!Ticket__c.Name}. Please contact an administrator if you believe you should have access.'); 
+  
+    if(sforce.console.isInConsole()) {
+        CloseMe();
+    } else {
+        window.top.location.href='/{!Ticket__c.GLOBAL_Goal__c}';
+    }
+</script>
+
+You do not have permission to access the record {!Ticket__c.Name}. Please contact an administrator if you believe you should have access.
+</apex:page>

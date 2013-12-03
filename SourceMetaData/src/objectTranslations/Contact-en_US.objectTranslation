@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>DOB</value>
+        </caseValues>
+        <name>birthdate_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Email</value>
+        </caseValues>
+        <name>contact_email</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Mobile Phone</value>
+        </caseValues>
+        <name>contact_mobile</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Names</value>
+        </caseValues>
+        <name>contact_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mobile Phone</value>
+        </caseValues>
+        <name>mobile_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Work Phone</value>
+        </caseValues>
+        <name>other_phone_contact</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Work Phone (test)</value>
+        </caseValues>
+        <name>phone_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Position</value>
+        </caseValues>
+        <name>title_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- Customer is flagged? --></help>
+        <label><!-- Contact Flagged --></label>
+        <name>Contact_Flagged__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact&apos;s current correspondence address. --></help>
+        <label><!-- Primary Address --></label>
+        <name>Current_Correspondence_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- The department that LBH employee belongs to. --></help>
+        <label><!-- LBH Department --></label>
+        <name>LBH_Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- The LBH Division that the employee belongs to --></help>
+        <label><!-- LBH Division --></label>
+        <name>LBH_Division__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique employee number of the LBH employee. --></help>
+        <label><!-- LBH Employee Number --></label>
+        <name>LBH_Employee_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The extension on which the LBH employee can be reached --></help>
+        <label><!-- LBH Extension --></label>
+        <name>LBH_Extension__c</name>
+    </fields>
+    <fields>
+        <help><!-- The LBH unit that the employee belongs to. --></help>
+        <label><!-- LBH Unit --></label>
+        <name>LBH_Unit__c</name>
+    </fields>
+    <fields>
+        <help><!-- When did the person change their surname? --></help>
+        <label><!-- Date of Name Change --></label>
+        <name>Last_Name_Changed__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catering Concession</masterLabel>
+            <translation><!-- Catering Concession --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- All the phone numbers for a contact combined. Not used for page layouts but used in lookup filters --></help>
+        <label><!-- Phone --></label>
+        <name>PhoneNumbersMerged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Name --></label>
+        <name>Preferred_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the previous surname, if the person has changed it? --></help>
+        <label><!-- Previous Surname --></label>
+        <name>Previous_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary address house number --></help>
+        <label><!-- House Number / Name --></label>
+        <name>Primary_Address_House_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary address postcode --></help>
+        <label><!-- Postcode --></label>
+        <name>Primary_Address_Postcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Full Name of the Contact including Salutation --></help>
+        <label><!-- Salutation Full Name --></label>
+        <name>Salutation_Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user account that the contact is associated with --></help>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The staff members primary work location --></help>
+        <label><!-- Work Location --></label>
+        <name>Work_Location__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LBH Employee Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Further Information --></label>
+            <section>Further Information</section>
+        </sections>
+        <sections>
+            <label><!-- LBH Employee Information --></label>
+            <section>LBH Employee Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Log Finance Ticket --></label>
+        <name>Log_Finance_Ticket</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- External --></label>
+        <name>External</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LBH Employee --></label>
+        <name>LBH_Employee</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must type a First Name before you can save a contact --></errorMessage>
+        <name>First_Name_must_be_completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least one Phone field must be completed --></errorMessage>
+        <name>One_phone_field_must_be_completed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Test_Contact_Btn --></label>
+        <name>Test_Contact_Btn</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

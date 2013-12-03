@@ -1,0 +1,27 @@
+<apex:page standardController="Case" extensions="ExtCreateTicket" title="Create Ticket Wizard">
+<apex:form >
+<apex:sectionHeader title="Goal: {!Case.Subject}" subtitle="Create Ticket"/>
+<apex:outputPanel id="pnlSelect">
+    <apex:pageBlock rendered="{!showTicketType}">
+        <apex:actionRegion >
+        <table>
+            <tr><td>Service Group:</td><td align="left"><apex:inputField id="myDept"  value="{!TicketPlaceholder.GLOBAL_Service_Group__c}" style="width:200px;" /></td></tr>
+            <tr><td>Service:</td><td align="left"><apex:inputField id="myService" value="{!TicketPlaceholder.GLOBAL_Service__c}"  style="width:200px;"/></td></tr>
+        </table>
+        </apex:actionRegion>
+        <apex:commandButton value="Create Ticket" action="{!CreateTicket}" reRender="pnlError,pnlSelect,pnlPayment"/>
+    </apex:pageBlock>
+</apex:outputPanel>
+</apex:form>
+<apex:outputPanel id="pnlError"><p style="color:#FF0000">{!txtError}</p></apex:outputPanel>
+<apex:outputPanel id="pnlPayment">
+<!-- Code below keeps throwing unhandled errors for certain ticket types - commenting out while determining what is the issue 
+    SF Broke it - http://boards.developerforce.com/t5/forums/forumtopicprintpage/board-id/visual-workflow/message-id/1533/print-single-message/false/page/1
+<flow:interview name="PAY_Payment_Ticket" finishLocation="{!ReturnToGoalPR }" buttonLocation="bottom" rendered="{!showPayment}">
+    <apex:param name="GoalID" value="{!Case.Id}" id="GoalID" />
+    <apex:param name="CCCPaymentRecordTypeId" value="{!PaymentRTId}" id="PaymentRTId" />    
+</flow:interview>
+-->
+</apex:outputPanel>
+
+</apex:page>

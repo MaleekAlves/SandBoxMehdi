@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interactions</value>
+    </caseValues>
+    <fields>
+        <help><!-- The person account of the customer who has created the interaction --></help>
+        <label><!-- Customer Name --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A description of the interaction --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The interaction type of the origin (this picklist may be better as a record type) --></help>
+        <label><!-- Channel --></label>
+        <name>Origin_Type__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face-to-face</masterLabel>
+            <translation><!-- Face-to-face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Origin Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

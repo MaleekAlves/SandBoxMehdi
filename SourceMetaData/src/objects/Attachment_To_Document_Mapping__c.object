@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>A list of record types that should have their attachments copied into documents automatically.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Document_Folder_Name__c</fullName>
+        <description>The name of the document folder that should attachments should be copied too</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the document folder that should attachments should be copied too</inlineHelpText>
+        <label>Document Folder Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <description>The name of the object that should have attachments copied to a doc folder</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the object that should have attachments copied to a doc folder</inlineHelpText>
+        <label>Object Name</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Record_Type_Name__c</fullName>
+        <description>The developer name of the record type that should have its attachments copied across to documents</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The developer name of the record type that should have its attachments copied across to documents</inlineHelpText>
+        <label>Record Type Name</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Attachment To Document Mapping</label>
+</CustomObject>

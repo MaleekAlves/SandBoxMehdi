@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <ownerRules>
+        <fullName>Share_Fin_ops_Tickets_between_all_with_Fin_ops_role</fullName>
+        <sharedTo>
+            <roleAndSubordinates>Finance_Operations_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Finance_Operations_Manager</roleAndSubordinates>
+        </sharedFrom>
+        <accessLevel>Edit</accessLevel>
+        <description>Share R/E access between all agents adn managers with Fin Ops roles</description>
+        <name>Share Fin ops Tickets between all with Fin ops role</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>Share_ICT_tickets_to_all_ICT_agents</fullName>
+        <sharedTo>
+            <roleAndSubordinates>LBH_1st_Line_Serv_Desk_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>LBH_1st_Line_Serv_Desk_Manager</roleAndSubordinates>
+        </sharedFrom>
+        <accessLevel>Edit</accessLevel>
+        <description>When a ticket is owned by someone with an ICT roleshare read edit to all other ICT role owners</description>
+        <name>Share ICT tickets to all ICT agents</name>
+    </ownerRules>
+</CustomObjectSharingRules>

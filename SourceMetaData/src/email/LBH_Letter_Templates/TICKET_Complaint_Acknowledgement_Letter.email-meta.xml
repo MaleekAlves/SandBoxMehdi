@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgement - Complaint - Ticket - Letter</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LBH_Standard_Letterhead</letterhead>
+    <name>TICKET: Complaint Acknowledgement Letter</name>
+    <style>formalLetter</style>
+    <subject>Complaint Acknowledgement - Reference {!Ticket__c.Name}</subject>
+    <textOnly>Dear {!Ticket__c.GLOBAL_Customer_Name__c}
+
+Your (complaint / enquiry) has been received by the Customer Relations Team, who will either respond to it or pass it on to someone who can.
+
+The Council’s targets for responding to complaints are:
+
+Stage 1
+We will respond within 10 working days of receipt, or we will contact you with an update
+
+Stage 2
+We will respond within 10 working days of receipt, or we will contact you with an update
+
+Stage 3
+We will tell you the timescales involved and keep you updated.
+
+Requests for Information are dealt as follows:
+
+Freedom of Information Request 
+A response will be issued within 20 working days
+
+Subject Access Request
+A response will be issued within 40 calendar days
+
+You can find the Council’s Complaints Policy at www.hounslow.gov.uk
+
+{!User.FirstName} {!User.LastName} | {!User.Title}
+Corporate Resources
+London Borough of Hounslow, Civic Centre, Lampton Road, Hounslow, TW3 4DN 
+Tel: 020 8583 5211| e-mail:  complaints@hounslow.gov.uk |Web:  http://www.hounslow.gov.uk/</textOnly>
+    <type>html</type>
+</EmailTemplate>

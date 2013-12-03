@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Associated Article</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Associated Articles</value>
+    </caseValues>
+    <fields>
+        <help><!-- The ICT Article that is being linked to a ticket --></help>
+        <label><!-- ICT Article --></label>
+        <name>ICT_Article__c</name>
+        <relationshipLabel><!-- Associated Articles --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Associated Article Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

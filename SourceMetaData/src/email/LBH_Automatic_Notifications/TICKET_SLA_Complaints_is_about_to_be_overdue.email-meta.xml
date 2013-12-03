@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Ticket is escalated: Complaints</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TICKET SLA Complaints is about to be overdue</name>
+    <style>none</style>
+    <subject>Ticket is about to be overdue: {!Ticket__c.GLOBAL_Ticket_Summary_Brief__c} Ref # {!Ticket__c.Name}</subject>
+    <textOnly>*** TICKET IS ABOUT TO BE OVERDUE ***
+
+Please provide an update on the ticket immediately or send a copy of the response if it has already been dealt with.
+
+The ticket # {!Ticket__c.Name}:  {!Ticket__c.GLOBAL_Ticket_Summary_Brief__c} is about to be overdue.
+The SLA of this ticket is {!Ticket__c.GLOBAL_Active_SLA__c} and it is about to expire in  {!Ticket__c.GLOBAL_SLA_Days_Remaining__c}  days.
+
+Ticket Information: Customer -  {!Ticket__c.GLOBAL_Customer_Name__c}
+Opened Date - {!Ticket__c.GLOBAL_Opened_Date__c}
+Current Owner - {!Ticket__c.OwnerFullName}
+
+Stage - {!Ticket__c.CMP_Complaint_Stage__c}
+Reason - {!Ticket__c.CMP_Reason_for_Complaint__c}
+Additional Information - {!Ticket__c.GLOBAL_Additional_Info__c}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

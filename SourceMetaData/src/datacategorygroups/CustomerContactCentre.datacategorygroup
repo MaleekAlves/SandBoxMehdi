@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Registration</label>
+            <name>Registration</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Benefits</label>
+            <name>Benefits</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Tax</label>
+            <name>Tax</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Business Regulation</label>
+            <name>Business_Regulation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Pest Control</label>
+            <name>Pest_Control</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Health</label>
+            <name>Health</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Fostering &amp; Adoption</label>
+            <name>Fostering_Adoption</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Social Care</label>
+            <name>Social_Care</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Democracy</label>
+            <name>Democracy</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Housing</label>
+            <name>Housing</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Leisure Services</label>
+            <name>Leisure_Services</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Education</label>
+            <name>Education</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Freedom Of Information</label>
+            <name>Freedom_Of_Information</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Complaints</label>
+            <name>Complaints</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Highways</label>
+            <name>Highways</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Planning</label>
+            <name>Planning</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Parking</label>
+            <name>Parking</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Waste and Recycling</label>
+            <name>Waste_and_Recycling</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>Data catagories to be used with knowledge articles used by the Customer Contact Centre</description>
+    <label>CustomerContactCentre</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

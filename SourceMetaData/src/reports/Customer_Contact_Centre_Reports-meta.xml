@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Customer Contact Centre Reports</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Business_Systems</role>
+        <role>System_Administrator</role>
+        <roleAndSubordinates>Customer_Contact_Centre_Support_Manager</roleAndSubordinates>
+        <roleAndSubordinates>Customer_Relations_Support_Manager</roleAndSubordinates>
+    </sharedTo>
+</ReportFolder>

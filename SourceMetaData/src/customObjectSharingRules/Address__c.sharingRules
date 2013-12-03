@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <criteriaBasedRules>
+        <fullName>Edit_permissions_for_Admins</fullName>
+        <sharedTo>
+            <role>System_Administrator</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outside Borough,Street,Local Imported,Local Pending</value>
+        </criteriaItems>
+        <accessLevel>Edit</accessLevel>
+        <name>Edit permissions for Admins</name>
+    </criteriaBasedRules>
+    <criteriaBasedRules>
+        <fullName>Edit_permissions_for_Pending_Outside_Borough</fullName>
+        <sharedTo>
+            <roleAndSubordinates>System_Administrator</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outside Borough,Local Pending</value>
+        </criteriaItems>
+        <accessLevel>Edit</accessLevel>
+        <name>Edit permissions for Pending &amp; Outside Borough</name>
+    </criteriaBasedRules>
+</CustomObjectSharingRules>

@@ -1,0 +1,14 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<br>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName}</p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Thank you for getting in touch with us on&nbsp;{!Case.Created_Date__c}, your unique reference for this interaction is Reference {!Case.CaseNumber} please quote it in any follow-up enquiries.&nbsp;</p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Attached to this email are document(s) that we believe may be useful for you.&nbsp;</p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p><font face="arial">{!Case.Articles_as_PDFs}</font></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;</p><p style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;</p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<p><strong>{!User.FirstName} {!User.LastName}&nbsp;| {!User.Title}</strong><br>Corporate Resources<br>London Borough of Hounslow, Civic Centre, Lampton Road, Hounslow, TW3 4DN <br>Tel: 020 8583 5211| e-mail:&nbsp; <a href="mailto:complaints@hounslow.gov.uk">complaints@hounslow.gov.uk</a> |Web:&nbsp;&nbsp;<a href="http://www.hounslow.gov.uk/">http://www.hounslow.gov.uk/</a></p>]]></td>
+</tr>
+</table>

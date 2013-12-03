@@ -1,0 +1,5 @@
+<apex:component access="global">
+  <h1>Ticket Acknowledgement to Customer</h1>
+  <apex:detail relatedList="true" />
+  <h2>Should add some related lists here, eg history</h2>
+</apex:component>

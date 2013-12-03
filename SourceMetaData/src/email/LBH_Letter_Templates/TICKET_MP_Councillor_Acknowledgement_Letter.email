@@ -1,0 +1,14 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p>{!Ticket__c.GLOBAL_Customer_Representative__c}</p><p>{!Ticket__c.GLOBAL_Representative_Corr_Address__c}</p><p>&nbsp;<span style="font-size: 12pt;">&nbsp;</span></p>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="0" aEditID="c1r2" >
+<![CDATA[<p>Dear&nbsp;{!Ticket__c.GLOBAL_Customer_Representative__c}</p><p>&nbsp;</p><p>Your correspondence on behalf of&nbsp;{!Ticket__c.GLOBAL_Customer_Name__c} has been received by the Customer Relations Team, who will either respond to it or pass it on to someone who can.<br>&nbsp;<br>The Council’s target for responding to correspondence from Councillors and Members of Parliament is seven working days from receipt.</p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p>&nbsp;</p>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="0" aEditID="c1r3" >
+<![CDATA[<p><strong>{!User.FirstName} {!User.LastName}&nbsp;| {!User.Title}</strong><br>Corporate Resources<br>London Borough of Hounslow, Civic Centre, Lampton Road, Hounslow, TW3 4DN <br>Tel: 020 8583 5211| e-mail:&nbsp; <a href="mailto:complaints@hounslow.gov.uk">complaints@hounslow.gov.uk</a> |Web:&nbsp;&nbsp;<a href="http://www.hounslow.gov.uk/">http://www.hounslow.gov.uk/</a></p>]]></td>
+</tr>
+</table>

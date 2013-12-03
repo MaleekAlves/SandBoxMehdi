@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Tickets</value>
+    </caseValues>
+    <fields>
+        <help><!-- The ticket that the relationship is from (related list not used on page layouts) --></help>
+        <label><!-- Ticket From --></label>
+        <name>Ticket_From__c</name>
+        <relationshipLabel><!-- Related Tickets (From) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The current owner of the ticket that is linked to --></help>
+        <label><!-- Ticket To Owner --></label>
+        <name>Ticket_To_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the Ticket that has been linked to --></help>
+        <label><!-- Ticket To Status --></label>
+        <name>Ticket_To_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The summary of the ticket that has been linked to --></help>
+        <label><!-- Ticket To Summary --></label>
+        <name>Ticket_To_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ticket that the relationship is to (related list used on page layouts) --></help>
+        <label><!-- Ticket To --></label>
+        <name>Ticket_To__c</name>
+        <relationshipLabel><!-- Related Tickets --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

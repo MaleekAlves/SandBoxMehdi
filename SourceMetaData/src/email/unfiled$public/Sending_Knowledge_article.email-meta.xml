@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An email template for knowledge article delivery to a customer</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LBH_Standard_Letterhead</letterhead>
+    <name>Sending Knowledge article</name>
+    <style>formalLetter</style>
+    <subject>Some information for you</subject>
+    <textOnly>Dear Customer
+
+Test 123
+
+{!Case.Articles_as_PDFs}</textOnly>
+    <type>html</type>
+</EmailTemplate>

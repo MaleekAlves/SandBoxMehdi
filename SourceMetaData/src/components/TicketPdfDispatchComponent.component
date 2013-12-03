@@ -1,0 +1,7 @@
+<apex:component access="global"    >
+
+    <h1>Ticket Dispatch to Service Team</h1> 
+
+    <apex:detail relatedList="false" />
+
+</apex:component>

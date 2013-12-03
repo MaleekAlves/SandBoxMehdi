@@ -1,0 +1,14 @@
+*** GOAL ESCALATION ALERT ***  
+
+The following goal has been escalated:  
+
+Goal Summary:  {!Case.CaseNumber}: {!Case.Case_Summary__c}
+Customer: {!Case.Contact}
+Opened Date: {!Case.Opened_Date__c}
+
+SLA Days Remaining: {!Case.SLA_Days_Remaining__c}
+SLA: {!Case.SLA__c}
+Owner:  {!Case.OwnerFullName}  
+
+
+Click on the link to access the goal directly:  {!Case.Link}

@@ -1,0 +1,16 @@
+<apex:page standardController="Ticket__c" showHeader="false">
+
+<apex:pageBlock mode="maindetail" rendered="{!Ticket__c.GLOBAL_is_Closed__c}">
+    <apex:pageBlockSection collapsible="true" title="Closed Details (Non-editable)">
+    
+                <apex:repeat value="{!$ObjectType.Ticket__c.FieldSets.Social_Care_Complaint_Closed_Field_Set }" var="f"> 
+                    <apex:outputField value="{!Ticket__c[f]}"/>
+                </apex:repeat>
+    
+    </apex:pageBlockSection>
+    
+
+</apex:pageBlock>
+
+
+</apex:page>

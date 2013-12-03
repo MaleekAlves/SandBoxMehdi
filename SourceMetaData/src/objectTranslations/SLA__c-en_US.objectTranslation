@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SLA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SLAs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Is the SLA currently active --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the SLA requires a customer acknowledgement within a certain number of days after commencement this should be specified here (0 for no acknowledgement required) --></help>
+        <label><!-- Customer Acknowledgement (Days) --></label>
+        <name>Customer_Acknowledgement_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- An optional description of the SLA (eg to describe what it is used for) --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of days before the SLA breach that the record should be escalated here. (0 = escalation required) --></help>
+        <label><!-- Escalation Prior to SLA Breach (Days) --></label>
+        <name>Escalation_Prior_to_SLA_Breach_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- A unique code number that can be used as a shorthand to identify the SLA. --></help>
+        <label><!-- SLA Code --></label>
+        <name>SLA_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Length (Days) --></label>
+        <name>SLA_Length_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked if the SLA is measured in working days, unchecked if it is measured in calendar days. --></help>
+        <label><!-- Working Days --></label>
+        <name>Working_Days__c</name>
+    </fields>
+    <layouts>
+        <layout>SLA Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <namedFilters>
+        <errorMessage><!-- Please select an active SLA. --></errorMessage>
+        <name>Case_00Nb0000003ehgrEAA</name>
+    </namedFilters>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

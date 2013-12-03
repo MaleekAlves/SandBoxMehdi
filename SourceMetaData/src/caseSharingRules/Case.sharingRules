@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <criteriaBasedRules>
+        <fullName>Complaints_FOI</fullName>
+        <sharedTo>
+            <role>Customer_Relations_Support_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>contains</operation>
+            <value>Complaint,Request for Information,Enquiry</value>
+        </criteriaItems>
+        <caseAccessLevel>Edit</caseAccessLevel>
+        <name>Complaints,FOI</name>
+    </criteriaBasedRules>
+    <criteriaBasedRules>
+        <fullName>External_Cases</fullName>
+        <sharedTo>
+            <role>Customer_Contact_Centre_Support_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CCC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>notContain</operation>
+            <value>Complaint</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>notContain</operation>
+            <value>Request for Information</value>
+        </criteriaItems>
+        <caseAccessLevel>Edit</caseAccessLevel>
+        <name>External Cases</name>
+    </criteriaBasedRules>
+    <criteriaBasedRules>
+        <fullName>Internal_Cases</fullName>
+        <sharedTo>
+            <role>Corporate_Service_Centre_Support_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CSC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>notContain</operation>
+            <value>Complaint</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>notContain</operation>
+            <value>Request for Information</value>
+        </criteriaItems>
+        <caseAccessLevel>Edit</caseAccessLevel>
+        <name>Internal Cases</name>
+    </criteriaBasedRules>
+</CaseSharingRules>

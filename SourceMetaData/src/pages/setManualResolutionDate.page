@@ -1,0 +1,19 @@
+<apex:page standardController="Ticket__c" extensions="SetManualResolutionDateController">
+  
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="Set Manual Resolution Date">
+            
+            <apex:pageBlockSection >
+            
+                <apex:repeat value="{!$ObjectType.Ticket__c.FieldSets.Manual_Resolution_Screen_Field_Set }" var="f"> 
+                    <apex:inputField value="{!Ticket__c[f]}"/>
+                </apex:repeat>
+                
+            </apex:pageBlockSection>
+            
+            <apex:commandButton action="{!save}" value="Save" id="saveButton" disabled="{!disableSave}" />
+            <apex:commandButton action="{!cancel}" value="Cancel" id="cancelButton"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

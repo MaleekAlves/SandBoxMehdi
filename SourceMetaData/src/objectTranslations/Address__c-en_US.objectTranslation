@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Addresses</value>
+    </caseValues>
+    <fields>
+        <help><!-- Issue with this address? --></help>
+        <label><!-- Address Error --></label>
+        <name>Address_Error__c</name>
+    </fields>
+    <fields>
+        <help><!-- PAON and Street --></help>
+        <label><!-- Address Part --></label>
+        <name>Address_Part__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <help><!-- PAON, SAON and Street. --></help>
+        <label><!-- Full Address Line 1 --></label>
+        <name>Full_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Locality and Town. --></help>
+        <label><!-- Full Address Line 2 --></label>
+        <name>Full_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- County and Postcode. --></help>
+        <label><!-- Full Address Line 3 --></label>
+        <name>Full_Address_Line_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- PAON, SAON and Street. --></help>
+        <label><!-- House Address --></label>
+        <name>House_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- SAON. --></help>
+        <label><!-- House Part --></label>
+        <name>House_Part__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deactivate a pending address. --></help>
+        <label><!-- Inactive address --></label>
+        <name>Inactive_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locality --></label>
+        <name>Locality__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please insure this does not contain secondary address information (E.g. Flat, Apartment, Unit or Room) --></help>
+        <label><!-- House Number / Name --></label>
+        <name>PAON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Town --></label>
+        <name>Post_Town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postcode --></label>
+        <name>Postcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Secondary Address Object. --></help>
+        <label><!-- SAON --></label>
+        <name>SAON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town --></label>
+        <name>Town__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the address within the UK? --></help>
+        <label><!-- Address is in UK --></label>
+        <name>UK_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique Property Reference Number. --></help>
+        <label><!-- UPRN --></label>
+        <name>UPRN__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique Street Reference Number. --></help>
+        <label><!-- USRN --></label>
+        <name>USRN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ward --></label>
+        <name>Ward__c</name>
+    </fields>
+    <layouts>
+        <layout>Address Layout</layout>
+        <sections>
+            <label><!-- Address Parts --></label>
+            <section>Address Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Map View --></label>
+            <section>Map View</section>
+        </sections>
+        <sections>
+            <label><!-- Unique Reference Numbers --></label>
+            <section>Unique Reference Numbers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outside Borough Address Layout</layout>
+        <sections>
+            <label><!-- Address Parts --></label>
+            <section>Address Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Unique Reference Numbers --></label>
+            <section>Unique Reference Numbers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pending Address Layout</layout>
+        <sections>
+            <label><!-- Address Parts --></label>
+            <section>Address Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Map View --></label>
+            <section>Map View</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Street Layout</layout>
+        <sections>
+            <label><!-- Address Parts --></label>
+            <section>Address Parts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Map View --></label>
+            <section>Map View</section>
+        </sections>
+        <sections>
+            <label><!-- Unique Reference Numbers --></label>
+            <section>Unique Reference Numbers</section>
+        </sections>
+    </layouts>
+    <namedFilters>
+        <errorMessage><!-- The customer address must be an active property. --></errorMessage>
+        <name>nf_01Ib0000000IJOKEA4_00Nb0000002zMXLEA2</name>
+    </namedFilters>
+    <namedFilters>
+        <errorMessage><!-- The target address must be active. --></errorMessage>
+        <name>nf_01Ib0000000IJhdEAG_00Nb0000002zU60EAE</name>
+    </namedFilters>
+    <recordTypes>
+        <label><!-- Local Imported --></label>
+        <name>Local_Imported</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local Pending --></label>
+        <name>Local_Pending</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Outside Borough --></label>
+        <name>Outside_Borough</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Street --></label>
+        <name>Street</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Local imported addresses must have either a UPRN or USRN. --></errorMessage>
+        <name>Imported_addresses_must_have_UPRN_USRN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Local imported, or pending addresses must have a street. --></errorMessage>
+        <name>Must_enter_a_street</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Edit_as_new_pending_address --></label>
+        <name>Edit_as_new_pending_address</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Address_Outside_Borough --></label>
+        <name>New_Address_Outside_Borough</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Imported_Address --></label>
+        <name>New_Imported_Address</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Pending_Address --></label>
+        <name>New_Pending_Address</name>
+    </webLinks>
+</CustomObjectTranslation>

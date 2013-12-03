@@ -1,0 +1,5 @@
+<apex:page standardController="ICT_Article__c" extensions="GeneratePdfICTArticle" action="{!generatePdf}">
+<apex:form >
+	<apex:messages />
+</apex:form>
+</apex:page>

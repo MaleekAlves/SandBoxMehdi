@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>text/plain</contentType>
+    <description>A simple text based form to go in the body of ticket dispatch emails that service areas can complete and reply to in order to auto update the ticket.</description>
+</StaticResource>

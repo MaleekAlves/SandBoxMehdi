@@ -1,0 +1,21 @@
+<apex:page standardController="Ticket__c" extensions="ConfirmTicketControllerExtension" showHeader="false" sideBar="false">
+<apex:form >
+	<apex:pageBlock title="Confirm Interface">
+		<apex:pageMessages ></apex:pageMessages>
+        <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton value="Send" action="{!sendToConfirm}" status="sendStatusId"/>
+        </apex:pageBlockButtons>		
+		<apex:pageBlockSection collapsible="false" title="Please review the details of the ticket below before submitting to Hounslow Highways Confirm system"
+			columns="1">
+            <apex:outputField value="{!Ticket__c.GLOBAL_Customer_Name__c}"/>
+            <apex:outputField value="{!Ticket__c.Name}"/>
+            <apex:pageBlockSectionItem >
+            	<apex:outputLabel value="Service"/>
+            	<apex:OutputText value="{!serviceDesc}"/>
+            </apex:pageBlockSectionItem> 
+            <apex:OutputField value="{!Ticket__c.HHW_Location__c}"/>
+		</apex:pageBlockSection>
+		
+	</apex:pageBlock>
+</apex:form>
+</apex:page>

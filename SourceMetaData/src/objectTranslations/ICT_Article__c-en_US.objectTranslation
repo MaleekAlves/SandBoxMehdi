@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ICT Article</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ICT Articles</value>
+    </caseValues>
+    <fields>
+        <help><!-- The Content of the ICT Article --></help>
+        <label><!-- Article Content --></label>
+        <name>Article_Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Name --></label>
+        <name>Article_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Type of article that this record corresponds to. --></help>
+        <label><!-- Article Type --></label>
+        <name>Article_Type__c</name>
+        <picklistValues>
+            <masterLabel>FAQ</masterLabel>
+            <translation><!-- FAQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fix</masterLabel>
+            <translation><!-- Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workaround</masterLabel>
+            <translation><!-- Workaround --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A link to the article on the intranet --></help>
+        <label><!-- Intranet Link --></label>
+        <name>Intranet_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Article --></label>
+        <name>related_To__c</name>
+        <relationshipLabel><!-- ICT Articles --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>ICT Article Layout</layout>
+        <sections>
+            <label><!-- Content --></label>
+            <section>Content</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Articles --></label>
+            <section>Related Articles</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_Pdf --></label>
+        <name>Generate_Pdf</name>
+    </webLinks>
+</CustomObjectTranslation>

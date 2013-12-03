@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attachment To Document Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attachment To Document Mapping</value>
+    </caseValues>
+    <fields>
+        <help><!-- The name of the document folder that should attachments should be copied too --></help>
+        <label><!-- Document Folder Name --></label>
+        <name>Document_Folder_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the object that should have attachments copied to a doc folder --></help>
+        <label><!-- Object Name --></label>
+        <name>Object_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The developer name of the record type that should have its attachments copied across to documents --></help>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

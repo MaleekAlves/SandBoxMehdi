@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Further Representatives on top of the primary selected Representative.</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Goal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Goal being represented.</inlineHelpText>
+        <label>Goal</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Additional Representatives</relationshipLabel>
+        <relationshipName>Representatives</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Representative__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact who is representing the goal.</inlineHelpText>
+        <label>Representative</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Goals Representated</relationshipLabel>
+        <relationshipName>Representatives</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Representative</label>
+    <nameField>
+        <displayFormat>R{000000}</displayFormat>
+        <label>Representative</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Representatives</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Additional_rep_not_same_as_primary_rep</fullName>
+        <active>true</active>
+        <errorConditionFormula>Representative__c ==  Goal__r.REP_Customer_Representative__c</errorConditionFormula>
+        <errorDisplayField>Representative__c</errorDisplayField>
+        <errorMessage>You have already selected this representative as the primary rep of the goal.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_Representative</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Representative</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a04/e?CF00Nb0000003fsQr={!Case.CaseNumber}&amp;CF00Nb0000003fsQr_lkid={!Case.Id}&amp;retURL={!Case.Id}&amp;saveURL={!Case.Id}</url>
+    </webLinks>
+</CustomObject>

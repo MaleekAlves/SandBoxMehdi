@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>28.0</apiVersion>
+    <description>A page to enable tickets to be linked and group actions to be performed to linked tickets.</description>
+    <label>Manage Multiple Tickets</label>
+</ApexPage>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>daniel.clayton@arcusglobal.com</email>
+    <name>Arcus Queue</name>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Related_Goal__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Related_Person__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SLA__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ICT_Article__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Interaction__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Team__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Address__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Representative__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Ticket__c</sobjectType>
+    </queueSobject>
+</Queue>

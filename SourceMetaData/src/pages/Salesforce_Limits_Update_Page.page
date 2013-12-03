@@ -1,0 +1,42 @@
+<apex:page controller="Salesforce_Limits_Update_Controller" >
+
+	<apex:sectionHeader title="wrapper" subtitle="Example"/>
+	
+	<apex:pageBlock >
+		<apex:pageBlockSection columns="2">
+		
+		<apex:pageBlockSectionItem >
+        	<apex:outputLabel value="DML Statements" />
+        	<apex:outputText value="{!DMLStatements}" /> 
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        	<apex:outputLabel value="Limit DML Statements" />
+        	<apex:outputText value="{!limitDMLStatements}" /> 
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        	<apex:outputLabel value="Email Invocations" />
+        	<apex:outputText value="{!emailInvocations}" /> 
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        	<apex:outputLabel value="Limit Email Invocations" />
+        	<apex:outputText value="{!limitEmailInvocations}" /> 
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        	<apex:outputLabel value="Fields Describes" />
+        	<apex:outputText value="{!fieldsDescribes}" /> 
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+        	<apex:outputLabel value="Limit Fields Describes" />
+        	<apex:outputText value="{!limitFieldsDescribes}" /> 
+        </apex:pageBlockSectionItem>
+                
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+	
+
+</apex:page>

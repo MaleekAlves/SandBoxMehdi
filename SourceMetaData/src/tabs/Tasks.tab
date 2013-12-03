@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A list of tasks that the agent has assigned</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Tasks</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom5: Leaf</motif>
+    <url>/00T?isdtp=vw</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

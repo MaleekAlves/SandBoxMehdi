@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inbound Email Address Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inbound Email Address Mapping</value>
+    </caseValues>
+    <fields>
+        <help><!-- The ID of the queue to which the newly created case should be assigned to --></help>
+        <label><!-- Assigned to Queue ID --></label>
+        <name>Assigned_to_Queue_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- when a case is created set its record type ID equal to this value --></help>
+        <label><!-- Case Record Type Id --></label>
+        <name>Case_Record_Type_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email address that has been sent to. --></help>
+        <label><!-- To Addr --></label>
+        <name>To_Addr__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

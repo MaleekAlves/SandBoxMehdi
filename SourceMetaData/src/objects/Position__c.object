@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A juntion object between contact (LBH staff) and team (service and management teams). As such this object will be used to indicate what positions staff members currently hold on teams. This is a many to many relationship</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>The date at which the position ended (blank if position is ongoing)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date at which the position ended (blank if position is ongoing)</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Short_Description__c</fullName>
+        <description>A short description of the position.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A short description of the position.</inlineHelpText>
+        <label>Short Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Member__c</fullName>
+        <description>The member of staff that holds the position</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The member of staff that holds the position</inlineHelpText>
+        <label>Staff Member</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Positions</relationshipLabel>
+        <relationshipName>Positions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>The start date of the position.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The start date of the position.</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <description>The team that the position is in.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The team that the position is in. (this could be a service team or management team)</inlineHelpText>
+        <label>Team</label>
+        <referenceTo>Team__c</referenceTo>
+        <relationshipLabel>Positions</relationshipLabel>
+        <relationshipName>Positions</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Position</label>
+    <nameField>
+        <displayFormat>PN-{000000}</displayFormat>
+        <label>Position No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Positions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
